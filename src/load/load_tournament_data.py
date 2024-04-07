@@ -63,6 +63,7 @@ def load_format_card_counts(path: str, format: str = '') -> dict:
     """
     data_dict: dict = {}
     tournament_files = get_tournament_files(path, format)
+    print(tournament_files)
     for tournament_file in tournament_files:
         update_dictionary_card_counts(data_dict, tournament_file)
     card_counts_df: pd.DataFrame = pd.DataFrame.from_dict(data_dict, orient='index')  

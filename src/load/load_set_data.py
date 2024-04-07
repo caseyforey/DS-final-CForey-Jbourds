@@ -7,26 +7,41 @@ Authors: Jordan Bourdeau, Casey Forey
 Date Created: 4/7/2024
 """
 
+import numpy as np
 import pandas as pd
 
-def get_first_printings() -> pd.DataFrame:
+def get_unique_card_names(all_printings_dataset: dict) -> np.array:
     """
-    Function to get the first set printings for every card.
+    Function which returns a numpy array of all unique card names,
 
-    :param ???:
+    :param all_printings_dataset: Dictionary containing information with all the card printings.
 
-    :returns: Pandas DataFrame with every card and its first printing.
+    :returns: Numpy array with all unique card names.
     """
-    pass
-    
+    card_names: set[str] = set()
+    set_names: list[str] = list(all_printings_dataset['data'].keys())
+    for set_name in set_names:
+        set_cards: list[dict] = all_printings_dataset['data'][set_name]['cards']
+        for card in set_cards:
+            card_names.add(card['name'])
+    return np.array(list(card_names))
 
-def get_set_data() -> pd.DataFrame:
+def get_card_sets_uuids(all_printings_dataset: dict, unique_card_names: np.array) -> dict[str: list[str]]:
     """
-    Function to get data about all of the sets into a Pandas DataFrame.
+    Function to get a list of sets and corresponding UUIDs for every card name based on the UUID in every set
+    they were released in.
 
-    :param ???:
+    :param all_printings_dataset: Dictionary containing information with all the card printings.
+    :param unique_card_names:     Numpy array with all unique card names.
 
-    :returns: Pandas DataFrame with every set and metadata about it.
+    :returns: Dictionary mapping each card name to a list of its set UUIDs.
     """
-    pass
+    card_uuids: dict[str: list[tuple[str, str]]] = {card_name: [] for card_name in unique_card_names}
+    set_names: list[str] = list(all_printings_dataset['data'].keys())
+    for set_name in set_names:
+        set_cards: list[dict] = all_printings_dataset['data'][set_name]['cards']
+        for card in set_cards:
+            card_uuids[card['name']].append((set_name, card['uuid']))
+
+    return card_uuids
 
