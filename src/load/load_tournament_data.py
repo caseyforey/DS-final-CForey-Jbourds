@@ -11,6 +11,8 @@ import json
 import os
 import pandas as pd
 
+import src.load.load_utils as load_utils
+
 def get_tournament_files(base_path: str, format: str = '') -> list[str]:
     """
     Function to return a list of file paths which use the structure of the base path
@@ -36,19 +38,18 @@ def update_dictionary_card_counts(data_dict: dict, tournament_file: str):
 
     :returns: None. Updates dictionary by reference.
     """
-    with open(tournament_file, 'r') as infile:
-        json_data = json.load(infile)
-        for deck in json_data['Decks']:
-            for main_card in deck['Mainboard']:
-                if main_card['CardName'] in data_dict:
-                    data_dict[main_card['CardName']] = main_card['Count'] + data_dict[main_card['CardName']]
-                else:
-                    data_dict[main_card['CardName']] = main_card['Count']
-            for side_card in deck['Sideboard']:
-                if side_card['CardName'] in data_dict:
-                    data_dict[side_card['CardName']] = side_card['Count'] + data_dict[side_card['CardName']]
-                else:
-                    data_dict[side_card['CardName']] = side_card['Count']
+    json_data: dict = load_utils.load_json_data(tournament_file)
+    for deck in json_data['Decks']:
+        for main_card in deck['Mainboard']:
+            if main_card['CardName'] in data_dict:
+                data_dict[main_card['CardName']] = main_card['Count'] + data_dict[main_card['CardName']]
+            else:
+                data_dict[main_card['CardName']] = main_card['Count']
+        for side_card in deck['Sideboard']:
+            if side_card['CardName'] in data_dict:
+                data_dict[side_card['CardName']] = side_card['Count'] + data_dict[side_card['CardName']]
+            else:
+                data_dict[side_card['CardName']] = side_card['Count']
 
 
 def load_format_card_counts(path: str, format: str = '') -> dict:
@@ -63,7 +64,6 @@ def load_format_card_counts(path: str, format: str = '') -> dict:
     """
     data_dict: dict = {}
     tournament_files = get_tournament_files(path, format)
-    print(tournament_files)
     for tournament_file in tournament_files:
         update_dictionary_card_counts(data_dict, tournament_file)
     card_counts_df: pd.DataFrame = pd.DataFrame.from_dict(data_dict, orient='index')  

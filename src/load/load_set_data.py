@@ -27,26 +27,25 @@ def get_unique_card_names(all_printings_dataset: dict) -> np.array:
             card_names.add(card['name'])
     return np.array(list(card_names))
 
-def get_card_sets_uuids(all_printings_dataset: dict, unique_card_names: np.array) -> dict[str: list[str]]:
+def get_card_printings_info(all_printings_dataset: dict, unique_card_names: np.array) -> dict[str: list[str]]:
     """
-    Function to get a list of sets and corresponding UUIDs for every card name based on the UUID in every set
+    Function to get a list of sets, UUIDs, and rarities for every card name based on the UUID in every set
     they were released in.
 
     :param all_printings_dataset: Dictionary containing information with all the card printings.
     :param unique_card_names:     Numpy array with all unique card names.
 
-    :returns: Dictionary mapping each card name to a list of its set UUIDs.
+    :returns: Dictionary mapping each card name to a list of its set names, UUIDs, and rarities.
     """
     card_sets_uuids: dict[str: list[tuple[str, str]]] = {card_name: [] for card_name in unique_card_names}
     set_names: list[str] = list(all_printings_dataset['data'].keys())
     for set_name in set_names:
         set_cards: list[dict] = all_printings_dataset['data'][set_name]['cards']
         for card in set_cards:
-            card_sets_uuids[card['name']].append((set_name, card['uuid']))
-
+            card_sets_uuids[card['name']].append((set_name, card['uuid'], card['rarity']))
     return card_sets_uuids
 
-def get_set_data(path) -> pd.DataFrame:
+def get_set_release_year(path) -> pd.DataFrame:
     """
     :param path: The path to the set json file to be read
 
@@ -60,4 +59,5 @@ def get_set_data(path) -> pd.DataFrame:
         set_year[set_id['code']] = set_id['releaseDate'][0:4]
     set_year_df = pd.DataFrame.from_dict(set_year, orient='index')
     set_year_df.reset_index(inplace= True) 
-    set_year_df.rename(columns={'index': 'Set Name', 0: 'Release Year'}, inplace=True)
+    set_year_df.rename(columns={'index': 'set', 0: 'release_year'}, inplace=True)
+    return set_year_df
