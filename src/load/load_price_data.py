@@ -46,7 +46,7 @@ def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: 
     if os.path.exists(unique_card_names_filepath) and use_cache:
         unique_card_names: np.array = np.load(unique_card_names_filepath)
     else:
-        all_printings: dict = load_utils.load_json_data(os.path.join(data_directory, 'AllPrintings.json'))
+        all_printings: dict = load_utils.load_json_data(all_printings_filepath)
         unique_card_names: np.array = lsd.get_unique_card_names(all_printings)
         np.save(unique_card_names_filepath, unique_card_names)
 
@@ -54,7 +54,7 @@ def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: 
     if os.path.exists(lowest_price_printing_filepath) and use_cache:
         lowest_price_printing_df: pd.DataFrame = pd.read_csv(lowest_price_printing_filepath)
     else:
-        all_prices: dict = load_utils.load_json_data(os.path.join(data_directory, 'AllPricesToday.json'))
+        all_prices: dict = load_utils.load_json_data(all_prices_filepath)
         card_set_printings: dict[str, list[tuple[str, str]]] = lsd.get_card_printings_info(all_printings, unique_card_names)
         lowest_price_printing_df: pd.DataFrame = get_lowest_price_printing(all_prices, card_set_printings)
         lowest_price_printing_df.to_csv(lowest_price_printing_filepath, index=False)
