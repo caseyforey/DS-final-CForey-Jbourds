@@ -104,9 +104,13 @@ def save_format_set_ban_counts(
     set_ban_counts['num_banned'] = set_ban_counts['num_banned'].astype(int)
     set_ban_counts.sort_values(by=['num_banned'], ascending=False, inplace=True)
 
+    # Merge with set release year
+    set_years: pd.DataFrame = load_set_and_release_year()
+    augmented_data: pd.DataFrame = set_ban_counts.merge(set_years, on=['set_code', 'set_name'])
+
     # Save to CSV
     output_path = os.path.join(data_directory, cache_directory, f'{format}_set_ban_counts.csv')
-    set_ban_counts.to_csv(output_path, index=False)
+    augmented_data.to_csv(output_path, index=False)
 
 def load_format_set_ban_counts(
         format: str,

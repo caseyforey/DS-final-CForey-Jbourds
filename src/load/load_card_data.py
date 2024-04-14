@@ -42,7 +42,11 @@ def load_first_card_printing_in_format(
     card_printings_info = get_card_printings_info(all_printings, unique_card_names)
     df_printings = convert_card_printings_to_df(card_printings_info)
 
-    return filter_first_printing_in_sets(df_printings, legal_sets)
+    # Filter out the basic lands
+    basic_lands: list[str] = ['plains', 'island', 'swamp', 'mountain', 'forest']
+    cleaned = df_printings[~df_printings['card_name'].str.lower().isin(basic_lands)]
+
+    return filter_first_printing_in_sets(cleaned, legal_sets)
 
 def load_format_banned_printings(
         format: str,
@@ -75,7 +79,7 @@ def filter_first_printing_in_sets(card_printings: pd.DataFrame, legal_sets: pd.D
     # Merge with legal sets to get release years
     df_legal_printings: pd.DataFrame = df_legal_printings.merge(legal_sets, on='set_code')
     # Sort and group to get the first printing by release year
-    df_first_printing: pd.DataFrame = df_legal_printings.sort_values(by='release_year').groupby('card_name', as_index=False).first()
+    df_first_printing: pd.DataFrame = df_legal_printings.sort_values(by=['release_year', 'release_month']).groupby('card_name', as_index=False).first()
 
     # Convert unique card_names into a DataFrame
     # Load all unique card_names
@@ -159,6 +163,7 @@ def get_card_printings_info(all_printings_dataset: dict, unique_card_names: np.a
     """
     card_sets_uuids: dict[str: list[tuple[str, str]]] = {card_name: [] for card_name in unique_card_names}
     set_names: list[str] = list(all_printings_dataset['data'].keys())
+
     for set_name in set_names:
         set_cards: list[dict] = all_printings_dataset['data'][set_name]['cards']
         for card in set_cards:
