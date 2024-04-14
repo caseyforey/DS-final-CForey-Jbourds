@@ -42,7 +42,7 @@ def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: 
     if os.path.exists(market_price_filepath) and use_cache:
         return pd.read_csv(market_price_filepath)
 
-    # Load unique card names if available, otherwise compute and cache it
+    # Load unique card_names if available, otherwise compute and cache it
     if os.path.exists(unique_card_names_filepath) and use_cache:
         unique_card_names: np.array = np.load(unique_card_names_filepath)
     else:
@@ -83,9 +83,9 @@ def get_lowest_price_printing(
     NOTE: For now only looks at Magic the Gathering Online data.
 
     :param all_prices_today_dataset: JSON dataset with all card prices from a certain data.
-    :param card_set_uuids:           Dictionary mapping every card name to a list with each set/UUID printing pair.
+    :param card_set_uuids:           Dictionary mapping every card_name to a list with each set/UUID printing pair.
 
-    :returns: Pandas dataframe with the card name and its lowest set printing.
+    :returns: Pandas dataframe with the card_name and its lowest set printing.
     """
     num_cards: int = len(card_sets_uuids)
     columns: list[tuple[str, np.array]] = [
