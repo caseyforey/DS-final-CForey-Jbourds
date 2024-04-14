@@ -25,7 +25,7 @@ def get_tournament_files(base_path: str, format: str = '') -> list[str]:
     """
     target_filenames: list[str] = []
     for root, directory_names, file_names in os.walk(base_path):
-        target_filenames += [os.path.join(root, file_name) for file_name in file_names if format in file_name]
+        target_filenames += [os.path.join(root, file_name) for file_name in file_names if format in file_name and 'league' not in file_name]
     return target_filenames
 
 
