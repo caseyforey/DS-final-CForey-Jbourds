@@ -51,6 +51,13 @@ def update_dictionary_card_counts(data_dict: dict, tournament_file: str):
             else:
                 data_dict[side_card['CardName']] = side_card['Count']
 
+def update_gamers(data_dict: dict, tournament_file: str):
+    json_data: dict = load_utils.load_json_data(tournament_file)
+    for deck in json_data['Decks']:
+        if deck['Player'] in data_dict:
+            data_dict[deck['Player']] += 1
+        else:
+            data_dict[deck['Player']] = 1
 
 def load_format_card_counts(path: str, format: str = '') -> dict:
     """
@@ -63,11 +70,17 @@ def load_format_card_counts(path: str, format: str = '') -> dict:
     :returns: Pandas dataframe with card_names and counts for the specified format.
     """
     data_dict: dict = {}
+    player_dict = {}
     tournament_files = get_tournament_files(path, format)
     for tournament_file in tournament_files:
         update_dictionary_card_counts(data_dict, tournament_file)
-    card_counts_df: pd.DataFrame = pd.DataFrame.from_dict(data_dict, orient='index')  
+        update_gamers(player_dict,tournament_file)
+    card_counts_df: pd.DataFrame = pd.DataFrame.from_dict(data_dict, orient='index')
     card_counts_df.reset_index(inplace= True) 
     card_counts_df.rename(columns={'index': 'card_name', 0: 'total_count'}, inplace=True) 
 
-    return card_counts_df
+    player_counts_df: pd.DataFrame = pd.DataFrame.from_dict(player_dict, orient='index')
+    player_counts_df.reset_index(inplace= True) 
+    player_counts_df.rename(columns={'index': 'Player', 0: 'count'}, inplace=True) 
+
+    return card_counts_df, player_counts_df

@@ -136,12 +136,15 @@ def get_unique_card_names(all_printings_dataset: dict) -> np.array:
 
     :returns: Numpy array with all unique card_names.
     """
+
+    exceptions = ['CMB1']
     card_names: set[str] = set()
     set_names: list[str] = list(all_printings_dataset['data'].keys())
     for set_name in set_names:
-        set_cards: list[dict] = all_printings_dataset['data'][set_name]['cards']
-        for card in set_cards:
-            card_names.add(card['name'])
+        if set_name not in exceptions:
+            set_cards: list[dict] = all_printings_dataset['data'][set_name]['cards']
+            for card in set_cards:
+                card_names.add(card['name'])
     return np.array(list(card_names))
 
 def get_card_printings_info(all_printings_dataset: dict, unique_card_names: np.array) -> dict[str: list[str]]:
