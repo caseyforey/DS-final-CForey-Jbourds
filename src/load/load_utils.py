@@ -17,6 +17,6 @@ def load_json_data(filepath: str) -> dict:
 
     :returns: Dictionary representation of the JSON data.
     """
-    with open(filepath, 'r') as infile:
+    with open(filepath, 'r',encoding='utf8') as infile:
         json_data = json.load(infile)
         return json_data

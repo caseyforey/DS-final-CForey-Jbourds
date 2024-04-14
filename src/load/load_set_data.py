@@ -133,10 +133,10 @@ def load_set_and_release_year(path: str = os.path.join(c.DATA_DIRECTORY, 'SetLis
     with open(path, 'r') as file:
         set_list = json.load(file)
         set_df = pd.DataFrame(
-            [(set_id['code'], set_id['name'], set_id['releaseDate'][0:4], set_id['releaseDate'][5:7]) for set_id in set_list['data']],
-            columns=['set_code', 'set_name', 'release_year', 'release_month']
+            [(set_id['code'], set_id['name'], set_id['releaseDate'][0:4], set_id['releaseDate'][5:7],set_id['baseSetSize']) for set_id in set_list['data']],
+            columns=['set_code', 'set_name', 'release_year', 'release_month','set_size']
         )
-
+        print(set_df)
         return set_df
     
 def load_legal_format_sets(format: str, data_directory: str = c.DATA_DIRECTORY, cache_directory: str = c.CACHE) -> np.array:
