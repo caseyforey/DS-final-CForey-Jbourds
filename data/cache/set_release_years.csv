@@ -1,747 +1,747 @@
-set,release_year
-P15A,2008
-PHTR,2017
-G17,2017
-PH17,2018
-PH18,2019
-PH19,2020
-PH20,2021
-PH21,2022
-PH22,2023
-P30T,2023
-30A,2022
-P30H,2022
-P30M,2022
-P30A,2022
-AFR,2021
-AAFR,2021
-MAFR,2021
-PAFR,2021
-AER,2017
-PAER,2017
-ARB,2009
-PARB,2009
-HBG,2022
-YDMU,2022
-YMID,2021
-YLCI,2023
-YNEO,2022
-YMKM,2024
-YSNC,2022
-YONE,2023
-YBRO,2022
-YWOE,2023
-ALL,1996
-AKH,2017
-MP2,2017
-PAKH,2017
-AKR,2020
-ATH,1998
-ATQ,1994
-APC,2001
-PAPC,2001
-ARN,1993
-ARC,2010
-OARC,2010
-E01,2017
-OE01,2017
-ANB,2020
-PARL,1996
-PAL99,1999
-PAL00,2000
-PAL01,2001
-PAL02,2002
-PAL03,2003
-PAL04,2004
-PAL05,2005
-PAL06,2006
-ANA,2018
-OANA,2018
-XANA,2018
-PALP,1998
-ACR,2024
-PAST,1997
-AVR,2012
-PAVR,2012
-PSS1,2015
-BRB,1999
-ACLB,2022
-PCLB,2022
-BFZ,2015
-PBFZ,2015
-TBTH,2014
-BBD,2018
-PBBD,2018
-BTD,2000
-BOK,2005
-PBOK,2005
-BLB,2024
-BNG,2014
-THP2,2014
-PBNG,2014
-OTP,2024
-PCEL,1996
-Q01,2018
-Q02,2019
-Q03,2019
-Q04,2020
-Q05,2021
-Q07,2022
-CHK,2004
-PCHK,2004
-PCMP,2006
-CHR,1995
-BCHR,1995
-6ED,1999
-CSP,2006
-PCSP,2006
-CST,2006
-CED,1993
-CMD,2011
-PCMD,2011
-OCMD,2011
-C13,2013
-OC13,2013
-C14,2014
-OC14,2014
-C15,2015
-OC15,2015
-C16,2016
-OC16,2016
-C17,2017
-OC17,2017
-C18,2018
-OC18,2018
-C19,2019
-OC19,2019
-C20,2020
-OC20,2020
-C21,2021
-OC21,2021
-CMA,2017
-CM2,2018
-CC2,2022
-CC1,2020
-CMR,2020
-PCMR,2020
-CLB,2022
-MCLB,2022
-CMM,2023
-ACMM,2023
-CM1,2012
-OCM1,2012
-CON,2009
-PCON,2009
-CNS,2014
-PCNS,2014
-CN2,2016
-M19,2018
-PM19,2018
-M20,2019
-PM20,2019
-M21,2020
-PM21,2020
-AVOW,2021
-VOC,2021
-OVOC,2021
-PLGM,1996
-PDCI,2006
-WDMU,2022
-DKA,2012
-PDKA,2012
-DST,2004
-PDST,2004
-DKM,2001
-TDAG,2014
-DIS,2006
-PDIS,2006
-WHO,2023
-DOM,2018
-PDOM,2018
-DMR,2023
-DMU,2022
-ADMU,2022
-DMC,2022
-FDMU,2022
-MDMU,2022
-PDMU,2022
-PTDMU,2022
-2XM,2020
-2X2,2022
-PDRC,1994
-DGM,2013
-PDGM,2013
-DTK,2015
-PDTK,2015
-DVD,2014
-EVG,2014
-GVL,2014
-JVC,2014
-DDH,2011
-DD3,2014
-DDQ,2016
-DDC,2009
-DDO,2015
-DDF,2010
-DD1,2007
-DDU,2018
-DDD,2009
-DDL,2013
-DDJ,2012
-DD2,2008
-DDM,2014
-DDG,2011
-DDT,2017
-DDS,2017
-TD2,2011
-DDR,2016
-DDE,2010
-DDK,2013
-DDN,2014
-DDI,2012
-DDP,2015
-DPA,2010
-PDTP,2009
-PDP10,2010
-PDP12,2011
-PDP13,2012
-PDP14,2013
-PDP15,2014
-8ED,2003
-P8ED,2003
-EMN,2016
-PEMN,2016
-EMA,2016
-PEWK,2022
-PELP,2000
-EVE,2008
-PEVE,2008
-EXO,1998
-PEXO,1998
-EA1,2022
-EA2,2022
-EA3,2023
-E02,2017
-TFTH,2013
-FEM,1994
-PIP,2024
-FRF,2015
-CP2,2015
-PFRF,2015
-5DN,2004
-P5DN,2004
-5ED,1997
-FBB,1994
-AFC,2021
-OAFC,2021
-4ED,1995
-4BB,1995
-FNM,2000
-F01,2001
-F02,2002
-F03,2003
-F04,2004
-F05,2005
-F06,2006
-F07,2007
-F08,2008
-F09,2009
-F10,2010
-F11,2011
-F12,2012
-F13,2013
-F14,2014
-F15,2015
-F16,2016
-F17,2017
-F18,2017
-V15,2015
-V14,2014
-DRB,2008
-V09,2009
-V11,2011
-V16,2016
-V12,2012
-V10,2010
-V17,2017
-V13,2013
-FUT,2007
-PFUT,2007
-GK1,2018
-PRWK,2018
-GDY,2022
-GNT,2018
-GN2,2019
-GN3,2022
-GTC,2013
-PGTC,2013
-GS1,2018
-PGPX,2007
-GPT,2006
-PGPT,2006
-GRN,2018
-PGRN,2018
-PGRU,1999
-PHUK,2006
-HHO,2006
-PHPR,1994
-H17,2017
-HA1,2019
-HA2,2020
-HA3,2020
-HA4,2021
-HA5,2021
-HA6,2022
-HA7,2023
-PHJ,2002
-HML,1995
-HOU,2017
-PHOU,2017
-PIDW,2012
-ICE,1995
-IMA,2017
-IKO,2020
-PIKO,2020
-ISD,2011
-PISD,2011
-VOW,2021
-MVOW,2021
-PVOW,2021
-SVOW,2021
-DBL,2022
-MID,2021
-MMID,2021
-PMID,2021
-SMID,2021
-CEI,1993
-ITP,1996
-INV,2000
-PINV,2000
-XLN,2017
-PXLN,2017
-PJJT,2003
-JOU,2014
-THP3,2014
-PJOU,2014
-JGP,1998
-G99,1999
-G00,2000
-G01,2001
-G02,2002
-G03,2003
-G04,2004
-G05,2005
-G06,2006
-G07,2007
-G08,2008
-G09,2009
-G10,2010
-G11,2011
-J12,2012
-J13,2013
-J14,2014
-J15,2015
-J16,2016
-J17,2017
-J18,2018
-J19,2019
-J20,2020
-PJ21,2021
-P22,2022
-P23,2023
-JUD,2002
-PJUD,2002
-JMP,2020
-J22,2022
-FJ22,2022
-AJMP,2020
-FJMP,2020
-J21,2021
-PJAS,2006
-PJSE,2005
-PSUS,1999
-REX,2023
-KLD,2016
-MPS,2016
-PKLD,2016
-KLR,2020
-KHM,2021
-AKHM,2021
-KHC,2021
-MKHM,2021
-PKHM,2021
-SKHM,2021
-NEO,2022
-MNEO,2022
-PNEO,2022
-SNEO,2022
-KTK,2014
-PKTK,2014
-L12,2012
-L13,2013
-L14,2014
-L15,2015
-L16,2016
-L17,2017
-OLGC,2011
-PZ1,2015
-LEG,1994
-LGN,2003
-PLGN,2003
-LEA,1993
-LEB,1993
-LRW,2007
-PLRW,2007
-PLG20,2020
-PLG21,2021
-PLG22,2022
-PLNY,2018
-PPC1,2014
-G18,2018
-PSS3,2018
-PPP1,2019
-WMKM,2024
-PSS4,2024
-WMOM,2023
-PANA,2018
-M10,2009
-PM10,2009
-M11,2010
-PM11,2010
-M12,2011
-PM12,2011
-M13,2012
-PM13,2012
-M14,2013
-PM14,2013
-M15,2014
-CP1,2014
-PM15,2014
-PMOA,2003
-PRM,2002
-TD0,2010
-ORI,2015
-CP3,2015
-PORI,2015
-MPR,2001
-PR2,2002
-P03,2003
-P04,2004
-P05,2005
-P06,2006
-P07,2007
-P08,2008
-P09,2009
-P10,2010
-P11,2011
-PMPS,2005
-PMPS06,2006
-PMPS07,2007
-PMPS08,2008
-PMPS09,2009
-PMPS10,2010
-PMPS11,2011
-PMDA,2023
-PF19,2019
-PF20,2020
-PF23,2023
-PF24,2024
-MOM,2023
-AMOM,2023
-MOC,2023
-FMOM,2023
-PMOM,2023
-SMOM,2023
-MAT,2023
-PMAT,2023
-A25,2018
-ME1,2007
-ME2,2008
-ME3,2009
-ME4,2011
-PMEI,1995
-MMQ,1999
-PMMQ,1999
-PMIC,1997
-AMID,2021
-MIC,2021
-OMIC,2021
-MIR,1996
-MRD,2003
-MBS,2011
-PMBS,2011
-PMRD,2004
-PBOOK,2009
-MD1,2014
-MH1,2019
-H1R,2021
-MH2,2021
-AMH2,2021
-MMH2,2021
-PMH2,2021
-MH3,2024
-M3C,2024
-AMH1,2019
-PMH1,2019
-MMA,2013
-MM2,2015
-MM3,2017
-MOR,2008
-PMOR,2008
-MGB,1996
-MUL,2023
-MKM,2024
-AMKM,2024
-MKC,2024
-PMKM,2024
-MB1,2019
-CMB1,2019
-CMB2,2021
-MED,2018
-PNAT,2018
-NEM,2000
-PNEM,2000
-ANEO,2022
-NEC,2022
-ASNC,2022
-NCC,2022
-PNCC,2022
-NPH,2011
-PNPH,2011
-9ED,2005
-P9ED,2005
-WONE,2023
-OGW,2016
-POGW,2016
-ODY,2001
-PODY,2001
-ONS,2002
-PONS,2002
-PHEL,2012
-OTJ,2024
-OTC,2024
-O90P,1996
-OLEP,1997
-ONE,2023
-AONE,2023
-ONC,2023
-FONE,2023
-MONE,2023
-PONE,2023
-Q06,2021
-Q08,2022
-PLC,2007
-PPLC,2007
-HOP,2009
-PC2,2012
-OPC2,2012
-PCA,2016
-OPCA,2018
-OHOP,2009
-PHOP,2009
-PLS,2001
-PPLS,2001
-PWCS,2019
-PTG,2019
-POR,1997
-P02,1998
-PTK,1999
-PPTK,1999
-PD2,2010
-PD3,2011
-H09,2009
-PTC,1996
-PPRO,2007
-PCY,2000
-PPCY,2000
-GK2,2019
-PRW2,2019
-RNA,2019
-PRNA,2019
-RVR,2024
-RAV,2005
-PRAV,2005
-CLU,2024
-FCLU,2024
-PRED,1996
-PRCQ,2022
-PR23,2023
-REN,1995
-PRES,2007
-RTR,2012
-PRTR,2012
-3ED,1994
-RIN,1995
-ROE,2010
-PROE,2010
-RQS,1996
-RIX,2018
-PRIX,2018
-PSAL,2005
-PS11,2011
-PSDC,2013
-PS14,2014
-PS15,2015
-PS16,2016
-PS17,2017
-PS18,2018
-PS19,2019
-SOK,2005
-PSOK,2005
-SOM,2010
-PSOM,2010
-SCG,2003
-PSCG,2003
-SLC,2022
-SLD,2019
-SLP,2023
-SLU,2020
-PSDG,2001
-7ED,2001
-SHM,2008
-PSHM,2008
-SIS,2023
-SOI,2016
-PSOI,2016
-SIR,2023
-ALA,2008
-PALA,2008
-SS3,2020
-SS2,2019
-SS1,2018
-SPG,2023
-S99,1999
-S00,2000
-SCD,2022
-SCH,2022
-SNC,2022
-MSNC,2022
-PSNC,2022
-PTSNC,2022
-ASTX,2021
-STA,2021
-STX,2021
-MSTX,2021
-PSTX,2021
-SSTX,2021
-STH,1998
-PSTH,1998
-SUM,1994
-PSVC,2022
-ALTR,2023
-LTC,2023
-FLTR,2023
-PLTR,2023
-PTKDF,2015
-TMP,1997
-PTMP,1997
-TPR,2015
-10E,2007
-P10E,2007
-BIG,2024
-BRO,2022
-ABRO,2022
-BRC,2022
-FBRO,2022
-MBRO,2022
-PBRO,2022
-BRR,2022
-PTBRO,2022
-SBRO,2022
-DRK,1994
-PLST,2020
-ULST,2022
-LTR,2023
-LCI,2023
-ALCI,2023
-LCC,2023
-PLCI,2023
-SLCI,2023
-THS,2013
-THB,2020
-PTHB,2020
-THP1,2013
-PTHS,2013
-ELD,2019
-PELD,2019
-TSP,2006
-PTSP,2006
-TSR,2021
-PTSR,2023
-TSB,2006
-TOR,2002
-PTOR,2002
-BOT,2022
-PZ2,2016
-P2HG,2005
-PURL,2009
-UGIN,2015
-PUMA,2018
-UMA,2018
-UNF,2022
-SUNF,2022
-UGL,1998
-UNH,2004
-PUNH,2004
-SLX,2022
-2ED,1993
-UND,2020
-UST,2017
-PUST,2017
-UDS,1999
-PUDS,1999
-ULG,1999
-PULG,1999
-USG,1998
-PUSG,1998
-PVAN,1997
-OVNT,2003
-VMA,2014
-VIS,1997
-WWOE,2023
-WAR,2019
-PWAR,2019
-40K,2022
-WTH,1997
-W16,2016
-W17,2017
-WOE,2023
-AWOE,2023
-WOC,2023
-PWOE,2023
-WOT,2023
-PW11,2011
-PW12,2012
-PW21,2021
-PW22,2022
-PW23,2023
-PW24,2024
-PWOS,1999
-WC97,1997
-WC98,1998
-WC99,1999
-WC00,2000
-WC01,2001
-WC02,2002
-WC03,2003
-WC04,2004
-PWOR,1999
-WMC,2013
-WWK,2010
-PWWK,2010
-PSS2,2017
-PXTC,2017
-PL24,2024
-PL21,2021
-PL23,2023
-PL22,2022
-ZEN,2009
-EXP,2015
-PZEN,2009
-ZNR,2020
-AZNR,2020
-ZNC,2020
-ZNE,2020
-MZNR,2020
-PZNR,2020
-SZNR,2020
+set_code,set_name,release_year,release_month,set_size
+P15A,15th Anniversary Cards,2008,04,2
+PHTR,2016 Heroes of the Realm,2017,09,3
+G17,2017 Gift Pack,2017,10,5
+PH17,2017 Heroes of the Realm,2018,08,3
+PH18,2018 Heroes of the Realm,2019,08,4
+PH19,2019 Heroes of the Realm,2020,08,9
+PH20,2020 Heroes of the Realm,2021,08,3
+PH21,2021 Heroes of the Realm,2022,08,4
+PH22,2022 Heroes of the Realm,2023,08,5
+P30T,30th Anniversary Celebration Tokyo,2023,09,2
+30A,30th Anniversary Edition,2022,11,594
+P30H,30th Anniversary History Promos,2022,09,10
+P30M,30th Anniversary Misc Promos,2022,09,5
+P30A,30th Anniversary Play Promos,2022,09,30
+AFR,Adventures in the Forgotten Realms,2021,07,281
+AAFR,Adventures in the Forgotten Realms Art Series,2021,07,0
+MAFR,Adventures in the Forgotten Realms Minigames,2021,07,5
+PAFR,Adventures in the Forgotten Realms Promos,2021,07,240
+AER,Aether Revolt,2017,01,184
+PAER,Aether Revolt Promos,2017,01,65
+ARB,Alara Reborn,2009,04,145
+PARB,Alara Reborn Promos,2009,04,2
+HBG,Alchemy Horizons: Baldur's Gate,2022,07,456
+YDMU,Alchemy: Dominaria,2022,10,39
+YMID,Alchemy: Innistrad,2021,12,64
+YLCI,Alchemy: Ixalan,2023,12,30
+YNEO,Alchemy: Kamigawa,2022,03,30
+YMKM,Alchemy: Murders at Karlov Manor,2024,03,30
+YSNC,Alchemy: New Capenna,2022,06,30
+YONE,Alchemy: Phyrexia,2023,02,30
+YBRO,Alchemy: The Brothers' War,2022,12,31
+YWOE,Alchemy: Wilds of Eldraine,2023,10,34
+ALL,Alliances,1996,06,199
+AKH,Amonkhet,2017,04,269
+MP2,Amonkhet Invocations,2017,04,54
+PAKH,Amonkhet Promos,2017,04,76
+AKR,Amonkhet Remastered,2020,08,338
+ATH,Anthologies,1998,11,85
+ATQ,Antiquities,1994,03,100
+APC,Apocalypse,2001,06,143
+PAPC,Apocalypse Promos,2001,06,1
+ARN,Arabian Nights,1993,12,78
+ARC,Archenemy,2010,06,150
+OARC,Archenemy Schemes,2010,06,45
+E01,Archenemy: Nicol Bolas,2017,06,106
+OE01,Archenemy: Nicol Bolas Schemes,2017,06,20
+ANB,Arena Beginner Set,2020,08,116
+PARL,Arena League 1996,1996,08,7
+PAL99,Arena League 1999,1999,01,350
+PAL00,Arena League 2000,2000,01,11
+PAL01,Arena League 2001,2001,01,12
+PAL02,Arena League 2002,2002,01,5
+PAL03,Arena League 2003,2003,01,8
+PAL04,Arena League 2004,2004,01,8
+PAL05,Arena League 2005,2005,01,8
+PAL06,Arena League 2006,2006,01,8
+ANA,Arena New Player Experience,2018,07,40
+OANA,Arena New Player Experience Cards,2018,07,14
+XANA,Arena New Player Experience Extras,2018,07,20
+PALP,Asia Pacific Land Program,1998,09,15
+ACR,Assassin's Creed,2024,07,112
+PAST,Astral Cards,1997,04,12
+AVR,Avacyn Restored,2012,05,244
+PAVR,Avacyn Restored Promos,2012,04,5
+PSS1,BFZ Standard Series,2015,10,5
+BRB,Battle Royale Box Set,1999,11,136
+ACLB,Battle for Baldur's Gate Art Series,2022,06,0
+PCLB,Battle for Baldur's Gate Promos,2022,06,108
+BFZ,Battle for Zendikar,2015,10,274
+PBFZ,Battle for Zendikar Promos,2015,10,89
+TBTH,Battle the Horde,2014,03,15
+BBD,Battlebond,2018,06,254
+PBBD,Battlebond Promos,2018,06,22
+BTD,Beatdown Box Set,2000,10,90
+BOK,Betrayers of Kamigawa,2005,02,165
+PBOK,Betrayers of Kamigawa Promos,2005,02,2
+BLB,Bloomburrow,2024,08,292
+BNG,Born of the Gods,2014,02,165
+THP2,Born of the Gods Hero's Path,2014,02,7
+PBNG,Born of the Gods Promos,2014,02,9
+OTP,Breaking News,2024,04,0
+PCEL,Celebration Cards,1996,08,8
+Q01,Challenger Decks 2018,2018,04,0
+Q02,Challenger Decks 2019,2019,04,0
+Q03,Challenger Decks 2019 Japan,2019,11,0
+Q04,Challenger Decks 2020,2020,03,0
+Q05,Challenger Decks 2021,2021,03,0
+Q07,Challenger Decks 2022,2022,04,0
+CHK,Champions of Kamigawa,2004,10,306
+PCHK,Champions of Kamigawa Promos,2004,10,1
+PCMP,Champs and States,2006,03,12
+CHR,Chronicles,1995,07,125
+BCHR,Chronicles Foreign Black Border,1995,07,125
+6ED,Classic Sixth Edition,1999,04,350
+CSP,Coldsnap,2006,07,155
+PCSP,Coldsnap Promos,2006,07,1
+CST,Coldsnap Theme Decks,2006,07,62
+CED,Collectors' Edition,1993,12,302
+CMD,Commander 2011,2011,06,318
+PCMD,Commander 2011 Launch Party,2011,06,5
+OCMD,Commander 2011 Oversized,2011,06,15
+C13,Commander 2013,2013,11,356
+OC13,Commander 2013 Oversized,2013,11,15
+C14,Commander 2014,2014,11,337
+OC14,Commander 2014 Oversized,2014,11,5
+C15,Commander 2015,2015,11,342
+OC15,Commander 2015 Oversized,2015,11,5
+C16,Commander 2016,2016,11,351
+OC16,Commander 2016 Oversized,2016,11,5
+C17,Commander 2017,2017,08,309
+OC17,Commander 2017 Oversized,2017,08,4
+C18,Commander 2018,2018,08,307
+OC18,Commander 2018 Oversized,2018,08,4
+C19,Commander 2019,2019,08,302
+OC19,Commander 2019 Oversized,2019,08,4
+C20,Commander 2020,2020,04,322
+OC20,Commander 2020 Oversized,2020,04,5
+C21,Commander 2021,2021,04,81
+OC21,Commander 2021 Display Commanders,2021,04,5
+CMA,Commander Anthology,2017,06,320
+CM2,Commander Anthology Volume II,2018,06,312
+CC2,Commander Collection: Black,2022,01,8
+CC1,Commander Collection: Green,2020,12,8
+CMR,Commander Legends,2020,11,361
+PCMR,Commander Legends Promos,2020,11,2
+CLB,Commander Legends: Battle for Baldur's Gate,2022,06,361
+MCLB,Commander Legends: Battle for Baldur's Gate Minigames,2022,06,0
+CMM,Commander Masters,2023,08,451
+ACMM,Commander Masters Art Series,2023,08,0
+CM1,Commander's Arsenal,2012,11,18
+OCM1,Commander's Arsenal Oversized,2012,11,10
+CON,Conflux,2009,02,145
+PCON,Conflux Promos,2009,02,2
+CNS,Conspiracy,2014,06,210
+PCNS,Conspiracy Promos,2014,06,1
+CN2,Conspiracy: Take the Crown,2016,08,221
+M19,Core Set 2019,2018,07,280
+PM19,Core Set 2019 Promos,2018,07,94
+M20,Core Set 2020,2019,07,280
+PM20,Core Set 2020 Promos,2019,07,143
+M21,Core Set 2021,2020,07,274
+PM21,Core Set 2021 Promos,2020,07,136
+AVOW,Crimson Vow Art Series,2021,11,0
+VOC,Crimson Vow Commander,2021,11,38
+OVOC,Crimson Vow Commander Display Commanders,2021,11,2
+PLGM,DCI Legend Membership,1996,07,2
+PDCI,DCI Promos,2006,01,79
+WDMU,DMU Japanese Promo Tokens,2022,09,0
+DKA,Dark Ascension,2012,02,158
+PDKA,Dark Ascension Promos,2012,01,5
+DST,Darksteel,2004,02,165
+PDST,Darksteel Promos,2004,02,1
+DKM,Deckmasters,2001,12,50
+TDAG,Defeat a God,2014,05,15
+DIS,Dissension,2006,05,180
+PDIS,Dissension Promos,2006,05,2
+WHO,Doctor Who,2023,10,331
+DOM,Dominaria,2018,04,269
+PDOM,Dominaria Promos,2018,04,118
+DMR,Dominaria Remastered,2023,01,261
+DMU,Dominaria United,2022,09,281
+ADMU,Dominaria United Art Series,2022,09,0
+DMC,Dominaria United Commander,2022,09,50
+FDMU,Dominaria United Jumpstart Front Cards,2022,09,0
+MDMU,Dominaria United Minigames,2022,09,0
+PDMU,Dominaria United Promos,2022,09,160
+PTDMU,Dominaria United Southeast Asia Tokens,2022,09,0
+2XM,Double Masters,2020,08,332
+2X2,Double Masters 2022,2022,07,577
+PDRC,Dragon Con,1994,07,1
+DGM,Dragon's Maze,2013,05,156
+PDGM,Dragon's Maze Promos,2013,04,6
+DTK,Dragons of Tarkir,2015,03,264
+PDTK,Dragons of Tarkir Promos,2015,03,51
+DVD,Duel Decks Anthology: Divine vs. Demonic,2014,12,62
+EVG,Duel Decks Anthology: Elves vs. Goblins,2014,12,62
+GVL,Duel Decks Anthology: Garruk vs. Liliana,2014,12,63
+JVC,Duel Decks Anthology: Jace vs. Chandra,2014,12,62
+DDH,Duel Decks: Ajani vs. Nicol Bolas,2011,09,80
+DD3,Duel Decks: Anthology,2014,12,0
+DDQ,Duel Decks: Blessed vs. Cursed,2016,02,80
+DDC,Duel Decks: Divine vs. Demonic,2009,04,62
+DDO,Duel Decks: Elspeth vs. Kiora,2015,02,67
+DDF,Duel Decks: Elspeth vs. Tezzeret,2010,09,79
+DD1,Duel Decks: Elves vs. Goblins,2007,11,62
+DDU,Duel Decks: Elves vs. Inventors,2018,04,76
+DDD,Duel Decks: Garruk vs. Liliana,2009,10,63
+DDL,Duel Decks: Heroes vs. Monsters,2013,09,81
+DDJ,Duel Decks: Izzet vs. Golgari,2012,09,90
+DD2,Duel Decks: Jace vs. Chandra,2008,11,62
+DDM,Duel Decks: Jace vs. Vraska,2014,03,88
+DDG,Duel Decks: Knights vs. Dragons,2011,04,81
+DDT,Duel Decks: Merfolk vs. Goblins,2017,10,63
+DDS,Duel Decks: Mind vs. Might,2017,03,65
+TD2,Duel Decks: Mirrodin Pure vs. New Phyrexia,2011,05,88
+DDR,Duel Decks: Nissa vs. Ob Nixilis,2016,09,76
+DDE,Duel Decks: Phyrexia vs. the Coalition,2010,03,71
+DDK,Duel Decks: Sorin vs. Tibalt,2013,03,80
+DDN,Duel Decks: Speed vs. Cunning,2014,09,82
+DDI,Duel Decks: Venser vs. Koth,2012,03,77
+DDP,Duel Decks: Zendikar vs. Eldrazi,2015,08,80
+DPA,Duels of the Planeswalkers,2010,06,113
+PDTP,Duels of the Planeswalkers 2009 Promos,2009,01,1
+PDP10,Duels of the Planeswalkers 2010 Promos,2010,01,2
+PDP12,Duels of the Planeswalkers 2012 Promos,2011,01,3
+PDP13,Duels of the Planeswalkers 2013 Promos,2012,01,3
+PDP14,Duels of the Planeswalkers 2014 Promos,2013,01,3
+PDP15,Duels of the Planeswalkers 2015 Promos,2014,07,269
+8ED,Eighth Edition,2003,07,350
+P8ED,Eighth Edition Promos,2003,07,1
+EMN,Eldritch Moon,2016,07,205
+PEMN,Eldritch Moon Promos,2016,07,76
+EMA,Eternal Masters,2016,06,249
+PEWK,Eternal Weekend,2022,11,4
+PELP,European Land Program,2000,02,15
+EVE,Eventide,2008,07,180
+PEVE,Eventide Promos,2008,07,2
+EXO,Exodus,1998,06,143
+PEXO,Exodus Promos,1998,06,1
+EA1,Explorer Anthology 1,2022,07,20
+EA2,Explorer Anthology 2,2022,12,25
+EA3,Explorer Anthology 3,2023,07,25
+E02,Explorers of Ixalan,2017,11,47
+TFTH,Face the Hydra,2013,10,15
+FEM,Fallen Empires,1994,11,187
+PIP,Fallout,2024,03,0
+FRF,Fate Reforged,2015,01,185
+CP2,Fate Reforged Clash Pack,2015,01,6
+PFRF,Fate Reforged Promos,2015,01,42
+5DN,Fifth Dawn,2004,06,165
+P5DN,Fifth Dawn Promos,2004,06,1
+5ED,Fifth Edition,1997,03,455
+FBB,Foreign Black Border,1994,04,306
+AFC,Forgotten Realms Commander,2021,07,62
+OAFC,Forgotten Realms Commander Display Commanders,2021,07,4
+4ED,Fourth Edition,1995,04,378
+4BB,Fourth Edition Foreign Black Border,1995,04,378
+FNM,Friday Night Magic 2000,2000,01,350
+F01,Friday Night Magic 2001,2001,01,7
+F02,Friday Night Magic 2002,2002,01,12
+F03,Friday Night Magic 2003,2003,01,12
+F04,Friday Night Magic 2004,2004,01,12
+F05,Friday Night Magic 2005,2005,01,12
+F06,Friday Night Magic 2006,2006,01,12
+F07,Friday Night Magic 2007,2007,01,12
+F08,Friday Night Magic 2008,2008,01,12
+F09,Friday Night Magic 2009,2009,01,12
+F10,Friday Night Magic 2010,2010,01,12
+F11,Friday Night Magic 2011,2011,01,12
+F12,Friday Night Magic 2012,2012,01,12
+F13,Friday Night Magic 2013,2013,01,12
+F14,Friday Night Magic 2014,2014,01,12
+F15,Friday Night Magic 2015,2015,01,12
+F16,Friday Night Magic 2016,2016,01,12
+F17,Friday Night Magic 2017,2017,01,12
+F18,Friday Night Magic 2018,2017,12,12
+V15,From the Vault: Angels,2015,08,15
+V14,From the Vault: Annihilation,2014,08,15
+DRB,From the Vault: Dragons,2008,08,15
+V09,From the Vault: Exiled,2009,08,15
+V11,From the Vault: Legends,2011,08,15
+V16,From the Vault: Lore,2016,08,16
+V12,From the Vault: Realms,2012,08,15
+V10,From the Vault: Relics,2010,08,15
+V17,From the Vault: Transform,2017,11,15
+V13,From the Vault: Twenty,2013,08,20
+FUT,Future Sight,2007,05,180
+PFUT,Future Sight Promos,2007,05,2
+GK1,GRN Guild Kit,2018,11,127
+PRWK,GRN Ravnica Weekend,2018,11,10
+GDY,Game Day Promos,2022,04,9
+GNT,Game Night,2018,11,68
+GN2,Game Night 2019,2019,11,64
+GN3,Game Night: Free-for-All,2022,10,135
+GTC,Gatecrash,2013,02,249
+PGTC,Gatecrash Promos,2013,01,9
+GS1,Global Series Jiang Yanggu & Mu Yanling,2018,06,40
+PGPX,Grand Prix Promos,2007,02,20
+GPT,Guildpact,2006,02,165
+PGPT,Guildpact Promos,2006,02,2
+GRN,Guilds of Ravnica,2018,10,259
+PGRN,Guilds of Ravnica Promos,2018,10,83
+PGRU,Guru,1999,07,5
+PHUK,Hachette UK,2006,01,60
+HHO,Happy Holidays,2006,12,19
+PHPR,HarperPrism Book Promos,1994,09,5
+H17,HasCon 2017,2017,09,4
+HA1,Historic Anthology 1,2019,11,20
+HA2,Historic Anthology 2,2020,03,25
+HA3,Historic Anthology 3,2020,05,27
+HA4,Historic Anthology 4,2021,03,25
+HA5,Historic Anthology 5,2021,05,25
+HA6,Historic Anthology 6,2022,07,20
+HA7,Historic Anthology 7,2023,07,25
+PHJ,Hobby Japan Promos,2002,07,5
+HML,Homelands,1995,10,140
+HOU,Hour of Devastation,2017,07,199
+PHOU,Hour of Devastation Promos,2017,07,62
+PIDW,IDW Comics Inserts,2012,01,9
+ICE,Ice Age,1995,06,383
+IMA,Iconic Masters,2017,11,249
+IKO,Ikoria: Lair of Behemoths,2020,04,274
+PIKO,Ikoria: Lair of Behemoths Promos,2020,04,136
+ISD,Innistrad,2011,09,264
+PISD,Innistrad Promos,2011,09,5
+VOW,Innistrad: Crimson Vow,2021,11,277
+MVOW,Innistrad: Crimson Vow Minigames,2021,11,0
+PVOW,Innistrad: Crimson Vow Promos,2021,11,126
+SVOW,Innistrad: Crimson Vow Substitute Cards,2021,11,0
+DBL,Innistrad: Double Feature,2022,01,633
+MID,Innistrad: Midnight Hunt,2021,09,277
+MMID,Innistrad: Midnight Hunt Minigames,2021,09,0
+PMID,Innistrad: Midnight Hunt Promos,2021,09,168
+SMID,Innistrad: Midnight Hunt Substitute Cards,2021,09,0
+CEI,Intl. Collectors' Edition,1993,12,302
+ITP,Introductory Two-Player Set,1996,12,67
+INV,Invasion,2000,10,350
+PINV,Invasion Promos,2000,10,1
+XLN,Ixalan,2017,09,279
+PXLN,Ixalan Promos,2017,09,120
+PJJT,Japan Junior Tournament,2003,01,12
+JOU,Journey into Nyx,2014,05,165
+THP3,Journey into Nyx Hero's Path,2014,05,8
+PJOU,Journey into Nyx Promos,2014,04,10
+JGP,Judge Gift Cards 1998,1998,01,3
+G99,Judge Gift Cards 1999,1999,01,350
+G00,Judge Gift Cards 2000,2000,01,2
+G01,Judge Gift Cards 2001,2001,01,2
+G02,Judge Gift Cards 2002,2002,01,2
+G03,Judge Gift Cards 2003,2003,01,3
+G04,Judge Gift Cards 2004,2004,01,6
+G05,Judge Gift Cards 2005,2005,01,4
+G06,Judge Gift Cards 2006,2006,01,4
+G07,Judge Gift Cards 2007,2007,01,5
+G08,Judge Gift Cards 2008,2008,01,5
+G09,Judge Gift Cards 2009,2009,01,10
+G10,Judge Gift Cards 2010,2010,01,8
+G11,Judge Gift Cards 2011,2011,01,8
+J12,Judge Gift Cards 2012,2012,01,8
+J13,Judge Gift Cards 2013,2013,01,8
+J14,Judge Gift Cards 2014,2014,01,9
+J15,Judge Gift Cards 2015,2015,01,8
+J16,Judge Gift Cards 2016,2016,01,8
+J17,Judge Gift Cards 2017,2017,01,8
+J18,Judge Gift Cards 2018,2018,01,8
+J19,Judge Gift Cards 2019,2019,04,8
+J20,Judge Gift Cards 2020,2020,01,10
+PJ21,Judge Gift Cards 2021,2021,01,10
+P22,Judge Gift Cards 2022,2022,01,11
+P23,Judge Gift Cards 2023,2023,01,10
+JUD,Judgment,2002,05,143
+PJUD,Judgment Promos,2002,05,1
+JMP,Jumpstart,2020,07,495
+J22,Jumpstart 2022,2022,12,834
+FJ22,Jumpstart 2022 Front Cards,2022,12,0
+AJMP,Jumpstart Arena Exclusives,2020,07,18
+FJMP,Jumpstart Front Cards,2020,06,0
+J21,Jumpstart: Historic Horizons,2021,08,388
+PJAS,Junior APAC Series,2006,01,6
+PJSE,Junior Series Europe,2005,01,8
+PSUS,Junior Super Series,1999,12,350
+REX,Jurassic World Collection,2023,11,0
+KLD,Kaladesh,2016,09,264
+MPS,Kaladesh Inventions,2016,09,54
+PKLD,Kaladesh Promos,2016,09,82
+KLR,Kaladesh Remastered,2020,11,301
+KHM,Kaldheim,2021,02,285
+AKHM,Kaldheim Art Series,2021,02,0
+KHC,Kaldheim Commander,2021,02,1
+MKHM,Kaldheim Minigames,2021,02,5
+PKHM,Kaldheim Promos,2021,02,1
+SKHM,Kaldheim Substitute Cards,2021,02,0
+NEO,Kamigawa: Neon Dynasty,2022,02,302
+MNEO,Kamigawa: Neon Dynasty Minigames,2022,02,0
+PNEO,Kamigawa: Neon Dynasty Promos,2022,02,155
+SNEO,Kamigawa: Neon Dynasty Substitute Cards,2022,02,0
+KTK,Khans of Tarkir,2014,09,269
+PKTK,Khans of Tarkir Promos,2014,09,56
+L12,League Tokens 2012,2012,01,2
+L13,League Tokens 2013,2013,01,4
+L14,League Tokens 2014,2014,01,4
+L15,League Tokens 2015,2015,01,1
+L16,League Tokens 2016,2016,01,1
+L17,League Tokens 2017,2017,01,1
+OLGC,Legacy Championship,2011,01,24
+PZ1,Legendary Cube Prize Pack,2015,11,149
+LEG,Legends,1994,06,310
+LGN,Legions,2003,02,145
+PLGN,Legions Promos,2003,02,1
+LEA,Limited Edition Alpha,1993,08,295
+LEB,Limited Edition Beta,1993,10,302
+LRW,Lorwyn,2007,10,301
+PLRW,Lorwyn Promos,2007,10,2
+PLG20,Love Your LGS 2020,2020,05,1
+PLG21,Love Your LGS 2021,2021,06,5
+PLG22,Love Your LGS 2022,2022,07,2
+PLNY,Lunar New Year 2018,2018,02,1
+PPC1,M15 Prerelease Challenge,2014,07,2
+G18,M19 Gift Pack,2018,11,5
+PSS3,M19 Standard Showdown,2018,07,5
+PPP1,M20 Promo Packs,2019,07,5
+WMKM,MKM Japanese Promo Tokens,2024,02,0
+PSS4,MKM Standard Showdown,2024,02,5
+WMOM,MOM Japanese Promo Tokens,2023,04,0
+PANA,MTG Arena Promos,2018,07,3
+M10,Magic 2010,2009,07,249
+PM10,Magic 2010 Promos,2009,07,3
+M11,Magic 2011,2010,07,249
+PM11,Magic 2011 Promos,2010,07,4
+M12,Magic 2012,2011,07,249
+PM12,Magic 2012 Promos,2011,07,3
+M13,Magic 2013,2012,07,249
+PM13,Magic 2013 Promos,2012,07,5
+M14,Magic 2014,2013,07,249
+PM14,Magic 2014 Promos,2013,07,5
+M15,Magic 2015,2014,07,269
+CP1,Magic 2015 Clash Pack,2014,07,6
+PM15,Magic 2015 Promos,2014,07,13
+PMOA,Magic Online Avatars,2003,01,85
+PRM,Magic Online Promos,2002,06,3076
+TD0,Magic Online Theme Decks,2010,11,197
+ORI,Magic Origins,2015,07,272
+CP3,Magic Origins Clash Pack,2015,07,6
+PORI,Magic Origins Promos,2015,07,53
+MPR,Magic Player Rewards 2001,2001,01,8
+PR2,Magic Player Rewards 2002,2002,01,6
+P03,Magic Player Rewards 2003,2003,01,1
+P04,Magic Player Rewards 2004,2004,01,1
+P05,Magic Player Rewards 2005,2005,01,6
+P06,Magic Player Rewards 2006,2006,01,7
+P07,Magic Player Rewards 2007,2007,01,7
+P08,Magic Player Rewards 2008,2008,01,7
+P09,Magic Player Rewards 2009,2009,01,7
+P10,Magic Player Rewards 2010,2010,01,9
+P11,Magic Player Rewards 2011,2011,01,9
+PMPS,Magic Premiere Shop 2005,2005,01,20
+PMPS06,Magic Premiere Shop 2006,2006,01,5
+PMPS07,Magic Premiere Shop 2007,2007,01,5
+PMPS08,Magic Premiere Shop 2008,2008,01,5
+PMPS09,Magic Premiere Shop 2009,2009,01,5
+PMPS10,Magic Premiere Shop 2010,2010,01,5
+PMPS11,Magic Premiere Shop 2011,2011,01,5
+PMDA,Magic × Duel Masters Promos,2023,09,4
+PF19,MagicFest 2019,2019,01,6
+PF20,MagicFest 2020,2020,01,6
+PF23,MagicFest 2023,2023,07,4
+PF24,MagicFest 2024,2024,01,1
+MOM,March of the Machine,2023,04,291
+AMOM,March of the Machine Art Series,2023,04,0
+MOC,March of the Machine Commander,2023,04,79
+FMOM,March of the Machine Jumpstart Front Cards,2023,04,0
+PMOM,March of the Machine Promos,2023,04,160
+SMOM,March of the Machine Substitute Cards,2023,04,0
+MAT,March of the Machine: The Aftermath,2023,05,50
+PMAT,March of the Machine: The Aftermath Promos,2023,11,7
+A25,Masters 25,2018,03,249
+ME1,Masters Edition,2007,09,195
+ME2,Masters Edition II,2008,09,245
+ME3,Masters Edition III,2009,09,230
+ME4,Masters Edition IV,2011,01,260
+PMEI,Media Inserts,1995,01,57
+MMQ,Mercadian Masques,1999,10,350
+PMMQ,Mercadian Masques Promos,1999,10,1
+PMIC,MicroProse Promos,1997,04,1
+AMID,Midnight Hunt Art Series,2021,09,0
+MIC,Midnight Hunt Commander,2021,09,38
+OMIC,Midnight Hunt Commander Display Commanders,2021,09,2
+MIR,Mirage,1996,10,350
+MRD,Mirrodin,2003,10,306
+MBS,Mirrodin Besieged,2011,02,155
+PMBS,Mirrodin Besieged Promos,2011,02,4
+PMRD,Mirrodin Promos,2004,06,1
+PBOOK,Miscellaneous Book Promos,2009,01,1
+MD1,Modern Event Deck 2014,2014,05,26
+MH1,Modern Horizons,2019,06,254
+H1R,Modern Horizons 1 Timeshifts,2021,06,40
+MH2,Modern Horizons 2,2021,06,303
+AMH2,Modern Horizons 2 Art Series,2021,06,0
+MMH2,Modern Horizons 2 Minigames,2021,06,5
+PMH2,Modern Horizons 2 Promos,2021,06,86
+MH3,Modern Horizons 3,2024,06,337
+M3C,Modern Horizons 3 Commander,2024,06,0
+AMH1,Modern Horizons Art Series,2019,06,54
+PMH1,Modern Horizons Promos,2019,06,2
+MMA,Modern Masters,2013,06,229
+MM2,Modern Masters 2015,2015,05,249
+MM3,Modern Masters 2017,2017,03,249
+MOR,Morningtide,2008,02,150
+PMOR,Morningtide Promos,2008,02,2
+MGB,Multiverse Gift Box,1996,11,10
+MUL,Multiverse Legends,2023,04,261
+MKM,Murders at Karlov Manor,2024,02,286
+AMKM,Murders at Karlov Manor Art Series,2024,02,0
+MKC,Murders at Karlov Manor Commander,2024,02,361
+PMKM,Murders at Karlov Manor Promos,2024,02,182
+MB1,Mystery Booster,2019,11,249
+CMB1,Mystery Booster Playtest Cards 2019,2019,11,121
+CMB2,Mystery Booster Playtest Cards 2021,2021,08,121
+MED,Mythic Edition,2018,10,24
+PNAT,Nationals Promos,2018,01,1
+NEM,Nemesis,2000,02,143
+PNEM,Nemesis Promos,2000,02,1
+ANEO,Neon Dynasty Art Series,2022,02,0
+NEC,Neon Dynasty Commander,2022,02,38
+ASNC,New Capenna Art Series,2022,04,0
+NCC,New Capenna Commander,2022,04,93
+PNCC,New Capenna Commander Promos,2022,04,76
+NPH,New Phyrexia,2011,05,175
+PNPH,New Phyrexia Promos,2011,05,4
+9ED,Ninth Edition,2005,07,350
+P9ED,Ninth Edition Promos,2005,07,2
+WONE,ONE Japanese Promo Tokens,2023,01,0
+OGW,Oath of the Gatewatch,2016,01,184
+POGW,Oath of the Gatewatch Promos,2016,01,65
+ODY,Odyssey,2001,10,350
+PODY,Odyssey Promos,2001,10,1
+ONS,Onslaught,2002,10,350
+PONS,Onslaught Promos,2002,09,1
+PHEL,Open the Helvault,2012,04,6
+OTJ,Outlaws of Thunder Junction,2024,04,286
+OTC,Outlaws of Thunder Junction Commander,2024,04,40
+O90P,Oversized 90's Promos,1996,04,10
+OLEP,Oversized League Prizes,1997,05,83
+ONE,Phyrexia: All Will Be One,2023,02,271
+AONE,Phyrexia: All Will Be One Art Series,2023,02,0
+ONC,Phyrexia: All Will Be One Commander,2023,02,28
+FONE,Phyrexia: All Will Be One Jumpstart Front Cards,2023,02,0
+MONE,Phyrexia: All Will Be One Minigames,2023,02,0
+PONE,Phyrexia: All Will Be One Promos,2023,02,160
+Q06,Pioneer Challenger Decks 2021,2021,10,10
+Q08,Pioneer Challenger Decks 2022,2022,11,0
+PLC,Planar Chaos,2007,02,165
+PPLC,Planar Chaos Promos,2007,02,2
+HOP,Planechase,2009,09,169
+PC2,Planechase 2012,2012,06,156
+OPC2,Planechase 2012 Planes,2012,06,40
+PCA,Planechase Anthology,2016,11,156
+OPCA,Planechase Anthology Planes,2018,12,86
+OHOP,Planechase Planes,2009,09,40
+PHOP,Planechase Promos,2009,09,2
+PLS,Planeshift,2001,02,143
+PPLS,Planeshift Promos,2001,02,1
+PWCS,Planeswalker Championship Promos,2019,10,26
+PTG,Ponies: The Galloping,2019,10,3
+POR,Portal,1997,05,243
+P02,Portal Second Age,1998,06,165
+PTK,Portal Three Kingdoms,1999,05,180
+PPTK,Portal: Three Kingdoms Promos,1999,05,2
+PD2,Premium Deck Series: Fire and Lightning,2010,11,34
+PD3,Premium Deck Series: Graveborn,2011,11,50
+H09,Premium Deck Series: Slivers,2009,11,41
+PTC,Pro Tour Collector Set,1996,05,308
+PPRO,Pro Tour Promos,2007,02,15
+PCY,Prophecy,2000,06,143
+PPCY,Prophecy Promos,2000,06,1
+GK2,RNA Guild Kit,2019,02,133
+PRW2,RNA Ravnica Weekend,2019,02,10
+RNA,Ravnica Allegiance,2019,01,259
+PRNA,Ravnica Allegiance Promos,2019,01,80
+RVR,Ravnica Remastered,2024,01,291
+RAV,Ravnica: City of Guilds,2005,10,306
+PRAV,Ravnica: City of Guilds Promos,2005,10,2
+CLU,Ravnica: Clue Edition,2024,02,289
+FCLU,Ravnica: Clue Edition Front Cards,2024,02,0
+PRED,Redemption Program,1996,10,1
+PRCQ,Regional Championship Qualifiers 2022,2022,10,0
+PR23,Regional Championship Qualifiers 2023,2023,01,4
+REN,Renaissance,1995,08,122
+PRES,Resale Promos,2007,01,40
+RTR,Return to Ravnica,2012,10,274
+PRTR,Return to Ravnica Promos,2012,10,10
+3ED,Revised Edition,1994,04,306
+RIN,Rinascimento,1995,08,69
+ROE,Rise of the Eldrazi,2010,04,248
+PROE,Rise of the Eldrazi Promos,2010,04,4
+RQS,Rivals Quick Start Set,1996,07,65
+RIX,Rivals of Ixalan,2018,01,196
+PRIX,Rivals of Ixalan Promos,2018,01,97
+PSAL,Salvat 2005,2005,08,720
+PS11,Salvat 2011,2011,01,224
+PSDC,San Diego Comic-Con 2013,2013,07,5
+PS14,San Diego Comic-Con 2014,2014,07,269
+PS15,San Diego Comic-Con 2015,2015,07,5
+PS16,San Diego Comic-Con 2016,2016,10,5
+PS17,San Diego Comic-Con 2017,2017,07,6
+PS18,San Diego Comic-Con 2018,2018,07,5
+PS19,San Diego Comic-Con 2019,2019,07,5
+SOK,Saviors of Kamigawa,2005,06,165
+PSOK,Saviors of Kamigawa Promos,2005,06,2
+SOM,Scars of Mirrodin,2010,10,249
+PSOM,Scars of Mirrodin Promos,2010,09,3
+SCG,Scourge,2003,05,143
+PSCG,Scourge Promos,2003,05,1
+SLC,Secret Lair 30th Anniversary Countdown Kit,2022,11,2002
+SLD,Secret Lair Drop,2019,12,1
+SLP,Secret Lair Showdown,2023,02,21
+SLU,Secret Lair: Ultimate Edition,2020,05,1
+PSDG,Sega Dreamcast Cards,2001,06,10
+7ED,Seventh Edition,2001,04,350
+SHM,Shadowmoor,2008,05,301
+PSHM,Shadowmoor Promos,2008,05,2
+SIS,Shadows of the Past,2023,03,81
+SOI,Shadows over Innistrad,2016,04,297
+PSOI,Shadows over Innistrad Promos,2016,04,89
+SIR,Shadows over Innistrad Remastered,2023,03,320
+ALA,Shards of Alara,2008,10,249
+PALA,Shards of Alara Promos,2008,10,1
+SS3,Signature Spellbook: Chandra,2020,06,8
+SS2,Signature Spellbook: Gideon,2019,06,8
+SS1,Signature Spellbook: Jace,2018,06,8
+SPG,Special Guests,2023,11,0
+S99,Starter 1999,1999,07,173
+S00,Starter 2000,2000,04,20
+SCD,Starter Commander Decks,2022,12,352
+SCH,Store Championships,2022,07,26
+SNC,Streets of New Capenna,2022,04,281
+MSNC,Streets of New Capenna Minigames,2022,04,0
+PSNC,Streets of New Capenna Promos,2022,04,160
+PTSNC,Streets of New Capenna Southeast Asia Tokens,2022,04,0
+ASTX,Strixhaven Art Series,2021,04,0
+STA,Strixhaven Mystical Archive,2021,04,63
+STX,Strixhaven: School of Mages,2021,04,275
+MSTX,Strixhaven: School of Mages Minigames,2021,04,5
+PSTX,Strixhaven: School of Mages Promos,2021,04,180
+SSTX,Strixhaven: School of Mages Substitute Cards,2021,04,0
+STH,Stronghold,1998,03,143
+PSTH,Stronghold Promos,1998,03,1
+SUM,Summer Magic / Edgar,1994,06,306
+PSVC,Summer Vacation Promos 2022,2022,08,3
+ALTR,Tales of Middle-earth Art Series,2023,06,0
+LTC,Tales of Middle-earth Commander,2023,06,84
+FLTR,Tales of Middle-earth Front Cards,2023,06,0
+PLTR,Tales of Middle-earth Promos,2023,06,86
+PTKDF,Tarkir Dragonfury,2015,04,4
+TMP,Tempest,1997,10,350
+PTMP,Tempest Promos,1997,10,1
+TPR,Tempest Remastered,2015,05,269
+10E,Tenth Edition,2007,07,383
+P10E,Tenth Edition Promos,2007,07,3
+BIG,The Big Score,2024,04,0
+BRO,The Brothers' War,2022,11,292
+ABRO,The Brothers' War Art Series,2022,11,0
+BRC,The Brothers' War Commander,2022,11,40
+FBRO,The Brothers' War Jumpstart Front Cards,2022,11,0
+MBRO,The Brothers' War Minigames,2022,11,0
+PBRO,The Brothers' War Promos,2022,11,169
+BRR,The Brothers' War Retro Artifacts,2022,11,189
+PTBRO,The Brothers' War Southeast Asia Tokens,2022,11,0
+SBRO,The Brothers' War Substitute Cards,2022,11,0
+DRK,The Dark,1994,08,119
+PLST,The List,2020,09,3481
+ULST,The List (Unfinity Foil Edition),2022,10,62
+LTR,The Lord of the Rings: Tales of Middle-earth,2023,06,289
+LCI,The Lost Caverns of Ixalan,2023,11,291
+ALCI,The Lost Caverns of Ixalan Art Series,2023,11,0
+LCC,The Lost Caverns of Ixalan Commander,2023,11,16
+PLCI,The Lost Caverns of Ixalan Promos,2023,11,174
+SLCI,The Lost Caverns of Ixalan Substitute Cards,2023,11,0
+THS,Theros,2013,09,249
+THB,Theros Beyond Death,2020,01,254
+PTHB,Theros Beyond Death Promos,2020,01,136
+THP1,Theros Hero's Path,2013,09,7
+PTHS,Theros Promos,2013,09,10
+ELD,Throne of Eldraine,2019,10,269
+PELD,Throne of Eldraine Promos,2019,10,150
+TSP,Time Spiral,2006,10,301
+PTSP,Time Spiral Promos,2006,10,2
+TSR,Time Spiral Remastered,2021,03,289
+PTSR,Time Spiral Remastered Promos,2023,09,2
+TSB,Time Spiral Timeshifted,2006,10,121
+TOR,Torment,2002,02,143
+PTOR,Torment Promos,2002,02,1
+BOT,Transformers,2022,11,58
+PZ2,Treasure Chest,2016,11,73
+P2HG,Two-Headed Giant Tournament,2005,12,1
+PURL,URL/Convention Promos,2009,02,9
+UGIN,Ugin's Fate,2015,01,185
+PUMA,Ultimate Box Topper,2018,12,40
+UMA,Ultimate Masters,2018,12,254
+UNF,Unfinity,2022,10,244
+SUNF,Unfinity Sticker Sheets,2022,10,48
+UGL,Unglued,1998,08,94
+UNH,Unhinged,2004,11,140
+PUNH,Unhinged Promos,2004,11,1
+SLX,Universes Within,2022,03,24
+2ED,Unlimited Edition,1993,12,302
+UND,Unsanctioned,2020,02,96
+UST,Unstable,2017,12,216
+PUST,Unstable Promos,2017,12,1
+UDS,Urza's Destiny,1999,06,143
+PUDS,Urza's Destiny Promos,1999,06,1
+ULG,Urza's Legacy,1999,02,143
+PULG,Urza's Legacy Promos,1999,02,1
+USG,Urza's Saga,1998,10,350
+PUSG,Urza's Saga Promos,1998,10,1
+PVAN,Vanguard Series,1997,05,32
+OVNT,Vintage Championship,2003,01,32
+VMA,Vintage Masters,2014,06,325
+VIS,Visions,1997,02,167
+WWOE,WOE Japanese Promo Tokens,2023,09,0
+WAR,War of the Spark,2019,05,264
+PWAR,War of the Spark Promos,2019,05,175
+40K,"Warhammer 40,000 Commander",2022,10,617
+WTH,Weatherlight,1997,06,167
+W16,Welcome Deck 2016,2016,04,16
+W17,Welcome Deck 2017,2017,04,30
+WOE,Wilds of Eldraine,2023,09,276
+AWOE,Wilds of Eldraine Art Series,2023,09,0
+WOC,Wilds of Eldraine Commander,2023,09,28
+PWOE,Wilds of Eldraine Promos,2023,09,200
+WOT,Wilds of Eldraine: Enchanting Tales,2023,09,0
+PW11,Wizards Play Network 2011,2011,01,3
+PW12,Wizards Play Network 2012,2012,01,3
+PW21,Wizards Play Network 2021,2021,06,6
+PW22,Wizards Play Network 2022,2022,03,6
+PW23,Wizards Play Network 2023,2023,01,11
+PW24,Wizards Play Network 2024,2024,01,13
+PWOS,Wizards of the Coast Online Store,1999,09,1
+WC97,World Championship Decks 1997,1997,08,131
+WC98,World Championship Decks 1998,1998,08,117
+WC99,World Championship Decks 1999,1999,08,111
+WC00,World Championship Decks 2000,2000,08,117
+WC01,World Championship Decks 2001,2001,08,138
+WC02,World Championship Decks 2002,2002,08,153
+WC03,World Championship Decks 2003,2003,08,142
+WC04,World Championship Decks 2004,2004,09,103
+PWOR,World Championship Promos,1999,08,350
+WMC,World Magic Cup Qualifiers,2013,04,5
+WWK,Worldwake,2010,02,145
+PWWK,Worldwake Promos,2010,02,4
+PSS2,XLN Standard Showdown,2017,09,5
+PXTC,XLN Treasure Chest,2017,11,10
+PL24,Year of the Dragon 2024,2024,02,6
+PL21,Year of the Ox 2021,2021,01,4
+PL23,Year of the Rabbit 2023,2023,02,5
+PL22,Year of the Tiger 2022,2022,02,5
+ZEN,Zendikar,2009,10,249
+EXP,Zendikar Expeditions,2015,10,45
+PZEN,Zendikar Promos,2009,10,3
+ZNR,Zendikar Rising,2020,09,280
+AZNR,Zendikar Rising Art Series,2020,09,0
+ZNC,Zendikar Rising Commander,2020,09,1
+ZNE,Zendikar Rising Expeditions,2020,09,30
+MZNR,Zendikar Rising Minigames,2020,09,5
+PZNR,Zendikar Rising Promos,2020,09,168
+SZNR,Zendikar Rising Substitute Cards,2020,09,0

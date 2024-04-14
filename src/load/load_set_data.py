@@ -122,7 +122,7 @@ def load_format_set_ban_counts(
     """
     return pd.read_csv(os.path.join(data_directory, cache_directory, f'{format}_set_ban_counts.csv'))
 
-def load_set_and_release_year(path: str = os.path.join(c.DATA_DIRECTORY, 'SetList.json')) -> pd.DataFrame:
+def get_set_and_release_year(path: str = os.path.join(c.DATA_DIRECTORY, 'SetList.json')) -> pd.DataFrame:
     """
     File to load all the sets and release years into a Pandas dataframe.
 
@@ -133,11 +133,30 @@ def load_set_and_release_year(path: str = os.path.join(c.DATA_DIRECTORY, 'SetLis
     with open(path, 'r') as file:
         set_list = json.load(file)
         set_df = pd.DataFrame(
-            [(set_id['code'], set_id['name'], set_id['releaseDate'][0:4], set_id['releaseDate'][5:7],set_id['baseSetSize']) for set_id in set_list['data']],
-            columns=['set_code', 'set_name', 'release_year', 'release_month','set_size']
+            [(set_id['code'], set_id['name'], set_id['releaseDate'][0:4], set_id['releaseDate'][5:7], set_id['baseSetSize']) for set_id in set_list['data']],
+            columns=['set_code', 'set_name', 'release_year', 'release_month', 'set_size']
         )
-        print(set_df)
         return set_df
+    
+def save_set_and_release_year(data_directory: str= c.DATA_DIRECTORY, cache_directory: str = c.CACHE):
+    """
+    Function to save the set and realase years dataframe to a cached csv.
+
+    :param data_directory:  String path for the data directory. Defaults to constant.
+    :param cache_directory: String path for the cache directory. Defaults to constant.
+    """
+    df: pd.DataFrame = get_set_and_release_year()
+    df.to_csv(os.path.join(data_directory, cache_directory, 'set_release_years.csv'), index=False)
+
+def load_set_and_release_year(data_directory: str = c.DATA_DIRECTORY, cache_directory: str = c.CACHE) -> pd.DataFrame:
+    """
+    Function to save the set and realase years dataframe to a cached csv.
+
+    :param data_directory:  String path for the data directory. Defaults to constant.
+    :param cache_directory: String path for the cache directory. Defaults to constant.
+    """
+    df: pd.DataFrame = pd.read_csv(os.path.join(data_directory, cache_directory, 'set_release_years.csv'))
+    return df
     
 def load_legal_format_sets(format: str, data_directory: str = c.DATA_DIRECTORY, cache_directory: str = c.CACHE) -> np.array:
     """

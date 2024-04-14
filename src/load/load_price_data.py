@@ -61,7 +61,7 @@ def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: 
 
     # Get the release year for all the sets
     if os.path.exists(set_release_year_filepath) and use_cache:
-        set_release_year_df: pd.DataFrame = pd.read_csv(set_release_year_filepath)
+        set_release_year_df: pd.DataFrame = lsd.load_set_and_release_year()
     else:
         set_release_year_df: pd.DataFrame = lsd.get_set_release_year(set_list_filepath)
         set_release_year_df.to_csv(set_release_year_filepath, index=False)
