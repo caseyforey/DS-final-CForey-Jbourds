@@ -1,61 +1,62 @@
 set_name,set_code,num_banned,release_year,release_month,set_size
 Mirrodin,MRD,9,2003,10,306
 Throne of Eldraine,ELD,5,2019,10,269
-Ninth Edition,9ED,4,2005,7,350
 Ikoria: Lair of Behemoths,IKO,4,2020,4,274
+Ninth Edition,9ED,4,2005,7,350
 New Phyrexia,NPH,3,2011,5,175
-Darksteel,DST,2,2004,2,165
-Champions of Kamigawa,CHK,2,2004,10,306
-Betrayers of Kamigawa,BOK,2,2005,2,165
-Kaldheim,KHM,2,2021,2,285
-Coldsnap,CSP,2,2006,7,155
-Time Spiral,TSP,2,2006,10,301
 Khans of Tarkir,KTK,2,2014,9,269
-Rise of the Eldrazi,ROE,1,2010,4,248
-Worldwake,WWK,1,2010,2,145
-Zendikar,ZEN,1,2009,10,249
-Magic 2012,M12,1,2011,7,249
-Alara Reborn,ARB,1,2009,4,145
-Magic 2010,M10,1,2009,7,249
-Core Set 2020,M20,1,2019,7,280
-Lorwyn,LRW,1,2007,10,301
-Dark Ascension,DKA,1,2012,2,158
-Scars of Mirrodin,SOM,1,2010,10,249
+Modern Horizons,MH1,2,2019,6,254
+Time Spiral,TSP,2,2006,10,301
+Coldsnap,CSP,2,2006,7,155
+Kaldheim,KHM,2,2021,2,285
+Champions of Kamigawa,CHK,2,2004,10,306
+Darksteel,DST,2,2004,2,165
+Betrayers of Kamigawa,BOK,2,2005,2,165
+Modern Horizons 2,MH2,2,2021,6,303
 Planar Chaos,PLC,1,2007,2,165
-Wilds of Eldraine,WOE,1,2023,9,276
-Ravnica: City of Guilds,RAV,1,2005,10,306
-Return to Ravnica,RTR,1,2012,10,274
-Fifth Dawn,5DN,1,2004,6,165
+Magic 2010,M10,1,2009,7,249
 Mirrodin Besieged,MBS,1,2011,2,155
-Eighth Edition,8ED,0,2003,7,350
+Scars of Mirrodin,SOM,1,2010,10,249
+Core Set 2020,M20,1,2019,7,280
+Rise of the Eldrazi,ROE,1,2010,4,248
+Ravnica: City of Guilds,RAV,1,2005,10,306
+Zendikar,ZEN,1,2009,10,249
+Alara Reborn,ARB,1,2009,4,145
+Dark Ascension,DKA,1,2012,2,158
+Magic 2012,M12,1,2011,7,249
+Fifth Dawn,5DN,1,2004,6,165
+Return to Ravnica,RTR,1,2012,10,274
+Lorwyn,LRW,1,2007,10,301
+Wilds of Eldraine,WOE,1,2023,9,276
+Worldwake,WWK,1,2010,2,145
+Core Set 2021,M21,0,2020,7,274
+Hour of Devastation,HOU,0,2017,7,199
 War of the Spark,WAR,0,2019,5,264
 Ravnica Allegiance,RNA,0,2019,1,259
+Zendikar Rising,ZNR,0,2020,9,280
 Core Set 2019,M19,0,2018,7,280
 Dominaria,DOM,0,2018,4,269
 Rivals of Ixalan,RIX,0,2018,1,196
 Ixalan,XLN,0,2017,9,279
-Hour of Devastation,HOU,0,2017,7,199
-Amonkhet,AKH,0,2017,4,269
 Guilds of Ravnica,GRN,0,2018,10,259
-Innistrad: Midnight Hunt,MID,0,2021,9,277
-Core Set 2021,M21,0,2020,7,274
-Zendikar Rising,ZNR,0,2020,9,280
+Streets of New Capenna,SNC,0,2022,4,281
 Strixhaven: School of Mages,STX,0,2021,4,275
 Adventures in the Forgotten Realms,AFR,0,2021,7,281
-Aether Revolt,AER,0,2017,1,184
+Innistrad: Midnight Hunt,MID,0,2021,9,277
 Innistrad: Crimson Vow,VOW,0,2021,11,277
 Kamigawa: Neon Dynasty,NEO,0,2022,2,302
-Streets of New Capenna,SNC,0,2022,4,281
+Welcome Deck 2017,W17,0,2017,4,30
 Dominaria United,DMU,0,2022,9,281
 The Brothers' War,BRO,0,2022,11,292
 Phyrexia: All Will Be One,ONE,0,2023,2,271
 March of the Machine,MOM,0,2023,4,291
 March of the Machine: The Aftermath,MAT,0,2023,5,50
 The Lost Caverns of Ixalan,LCI,0,2023,11,291
-Welcome Deck 2017,W17,0,2017,4,30
-Journey into Nyx,JOU,0,2014,5,165
+Murders at Karlov Manor,MKM,0,2024,2,286
+Amonkhet,AKH,0,2017,4,269
+Eighth Edition,8ED,0,2003,7,350
+Aether Revolt,AER,0,2017,1,184
 Kaladesh,KLD,0,2016,9,264
-Eldritch Moon,EMN,0,2016,7,205
 Saviors of Kamigawa,SOK,0,2005,6,165
 Guildpact,GPT,0,2006,2,165
 Dissension,DIS,0,2006,5,180
@@ -75,6 +76,7 @@ Dragon's Maze,DGM,0,2013,5,156
 Magic 2014,M14,0,2013,7,249
 Theros,THS,0,2013,9,249
 Born of the Gods,BNG,0,2014,2,165
+Journey into Nyx,JOU,0,2014,5,165
 Magic 2015,M15,0,2014,7,269
 Fate Reforged,FRF,0,2015,1,185
 Dragons of Tarkir,DTK,0,2015,3,264
@@ -83,4 +85,5 @@ Battle for Zendikar,BFZ,0,2015,10,274
 Oath of the Gatewatch,OGW,0,2016,1,184
 Welcome Deck 2016,W16,0,2016,4,16
 Shadows over Innistrad,SOI,0,2016,4,297
-Murders at Karlov Manor,MKM,0,2024,2,286
+Eldritch Moon,EMN,0,2016,7,205
+The Lord of the Rings: Tales of Middle-earth,LTR,0,2023,6,289

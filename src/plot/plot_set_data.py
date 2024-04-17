@@ -7,11 +7,218 @@ Author: Jordan Bourdeau
 Date Created: 4/14/24
 """
 
+import datetime
 from matplotlib import pyplot as plt
+import matplotlib.patches as mpatches
 import os
 import pandas as pd
 
 import src.constants as c
+
+def get_set_metrics_per_year(
+        full_set_data: pd.DataFrame, 
+        metric: str = 'mean_price', 
+        use_max: bool = True,
+    ) -> pd.DataFrame:
+    """
+    Function which gets the list of sets with the max metric from each year,
+
+    :param full_set_data:   Full data on the set, including all augmentations.
+    :param metric:          String name of the column to check.
+    :param use_max:         Boolean flag for whether to use idxmax or idxmin
+
+    :return: Returns Pandas Dataframe with selected set per year.
+    """
+    if use_max:
+        df: pd.DataFrame = full_set_data.loc[full_set_data.groupby(['release_year'])[metric].idxmax()]
+    else:
+        df: pd.DataFrame = full_set_data.loc[full_set_data.groupby(['release_year'])[metric].idxmin()]
+    return df
+
+def plot_superimposed_max_min_metrics_by_year(
+        augmented_data: pd.DataFrame, 
+        metrics: list[str],
+        listing_date: datetime.date, 
+    ):
+    """
+    Function which creates the metric plots which extract the max/min of each metric
+    among the sets for each year.
+
+    :param augmented_data: Pandas dataframe with the full, augmented data.
+    :param metrics:        List of column names to create plots for.
+    :param listing_date:  Date which card listings are gathered from. 
+    """
+
+    plt.style.use('ggplot')
+    plt.figure(figsize=(10, 8))
+    plt.title(f'{listing_date} - Max/Min Metrics For Sets Per Year')
+    plt.tight_layout(pad=4)
+
+    # Get internal list of colors, excluding the ones we are using for the lines
+    steel_blue: str = f'#1f77b4'
+    coral: str = '#ff7f0e'
+    colors: list[str] = [color for color in plt.rcParams["axes.prop_cycle"].by_key()["color"] if color not in [coral, steel_blue]]
+    
+    # Get handles to manually make legend
+    handles, _ = plt.gca().get_legend_handles_labels()
+
+    # Manually define patches
+    max_line_patch = mpatches.Patch(color=coral, label='Max Value Line', linestyle='-')
+    min_line_patch = mpatches.Patch(color=steel_blue, label='Min Value Line', linestyle='-')
+
+    # handles is a list, so append manual patch
+    handles += [max_line_patch, min_line_patch]
+
+    for color, metric in zip(colors, metrics):
+        min_df: pd.DataFrame = get_set_metrics_per_year(augmented_data, metric, False)
+        max_df: pd.DataFrame = get_set_metrics_per_year(augmented_data, metric, True)
+
+        label: str = ' '.join([word.capitalize() for word in metric.split('_')])
+        
+        plt.xlabel('Set Release Year')
+        plt.ylabel(label)
+
+        plt.plot(min_df['release_year'], min_df[metric], color=steel_blue, alpha=0.5)
+        plt.scatter(min_df['release_year'], min_df[metric], color=color)
+        
+        plt.plot(max_df['release_year'], max_df[metric], color=coral, alpha=0.5)
+        plt.scatter(max_df['release_year'], max_df[metric], color=color)
+
+        metric_patch  = mpatches.Patch(color=color, label=label)
+        handles.append(metric_patch)
+
+        for i, txt in enumerate(min_df['set_code']):
+            plt.annotate(txt, (min_df['release_year'].iloc[i], min_df[metric].iloc[i]), 
+                         ha='center', va='top', xytext=(0, -5), textcoords='offset points')
+        for i, txt in enumerate(max_df['set_code']):
+            plt.annotate(txt, (max_df['release_year'].iloc[i], max_df[metric].iloc[i]), 
+                         ha='center', va='bottom', xytext=(0, 5), textcoords='offset points')
+
+        plt.xticks(min_df['release_year'], rotation=90)
+        plt.savefig(os.path.join(c.IMAGE_DIRECTORY, f'superimposed_metrics_plot.png'))
+
+    plt.legend(bbox_to_anchor=(1.25, .5), handles=handles)
+    plt.show()
+    plt.rcParams.update(plt.rcParamsDefault)
+
+def plot_max_min_metrics_by_year(
+        augmented_data: pd.DataFrame, 
+        metrics: list[str],
+        listing_date: datetime.date, 
+    ):
+    """
+    Function which creates the metric plots which extract the max/min of each metric
+    among the sets for each year.
+
+    :param augmented_data: Pandas dataframe with the full, augmented data.
+    :param metrics:        List of column names to create plots for.
+    :param listing_date:  Date which card listings are gathered from. 
+    """
+
+    # Get internal list of colors, excluding the ones we are using for the lines
+    steel_blue: str = f'#1f77b4'
+    coral: str = '#ff7f0e'
+
+    for metric in metrics:
+        min_df: pd.DataFrame = get_set_metrics_per_year(augmented_data, metric, False)
+        max_df: pd.DataFrame = get_set_metrics_per_year(augmented_data, metric, True)
+
+        label: str = ' '.join([word.capitalize() for word in metric.split('_')])
+
+        # Manually define patches
+        max_line_patch = mpatches.Patch(color=coral, label=f'Max {label} Value', linestyle='-')
+        min_line_patch = mpatches.Patch(color=steel_blue, label=f'Min {label} Value', linestyle='-')
+
+        plt.style.use('ggplot')
+        plt.figure(figsize=(10, 8))
+        plt.title(f'{listing_date} - Max/Min {label} Metrics For Sets Per Year')
+        plt.tight_layout(pad=4)
+
+        # Get handles to manually make legend
+        handles, _ = plt.gca().get_legend_handles_labels()
+
+        # Handles is a list, so append manual patch
+        handles += [max_line_patch, min_line_patch]
+        
+        plt.xlabel('Set Release Year')
+        plt.ylabel(label)
+
+        plt.plot(min_df['release_year'], min_df[metric], color=steel_blue, alpha=0.5)
+        plt.scatter(min_df['release_year'], min_df[metric], color=steel_blue)
+        
+        plt.plot(max_df['release_year'], max_df[metric], color=coral, alpha=0.5)
+        plt.scatter(max_df['release_year'], max_df[metric], color=coral)
+
+        for i, txt in enumerate(min_df['set_code']):
+            plt.annotate(txt, (min_df['release_year'].iloc[i], min_df[metric].iloc[i]), 
+                         ha='center', va='top', xytext=(0, -5), textcoords='offset points')
+            
+        for i, txt in enumerate(max_df['set_code']):
+            plt.annotate(txt, (max_df['release_year'].iloc[i], max_df[metric].iloc[i]), 
+                         ha='center', va='bottom', xytext=(0, 5), textcoords='offset points')
+
+        plt.xticks(min_df['release_year'], rotation=90)
+        plt.savefig(os.path.join(c.IMAGE_DIRECTORY, f'{metric}_min_max_plot.png'))
+
+        plt.legend(bbox_to_anchor=(1.275, .5), handles=handles)
+        plt.show()
+        plt.rcParams.update(plt.rcParamsDefault)
+
+def plot_average_card_price_over_time(
+        card_price_df: pd.DataFrame, 
+        listing_date: datetime.date, 
+        start_year: int = 1993, 
+        end_year: int = 2023
+    ):
+    """
+    Function which plots the average card price based on the year of the set 
+    it is the least expensive in came out.
+
+    :param card_price_df: Pandas dataframe containing market price data.
+    :param listing_date:  Date which card listings are gathered from.        
+    :param start_year:    Start of the year window to look at (inclusive). Defaults to 1993 (when Magic came out).
+    :param end_year:      End of the year window to look at (inclusive). Defaults to 2023 (whole year increment from analysis). 
+
+    :returns: Outputs plot and saves it.
+    """
+    agg_df: pd.DataFrame = card_price_df.groupby(['release_year'])['price'].agg(['mean', 'median', 'std']).reset_index()
+    trimmed_df: pd.DataFrame = agg_df[(agg_df['release_year'] >= start_year) & (agg_df['release_year'] <= end_year)]
+
+    fig, (mean_plot, median_plot) = plt.subplots(2, 1, sharex=True)
+    fig.set_figheight(8)
+
+    # Mean plot
+    mean_plot.set_xlabel('Release Year')
+    mean_plot.set_ylabel('Mean Price (USD)')
+    mean_plot.set_title(f'Mean Card Price from Cheapest Set Release Based on {listing_date} Listing (USD)')
+    mean_plot.plot(trimmed_df['release_year'], trimmed_df['mean'])
+
+    # TODO: Figure out sets which contextualize this plot
+    # mean_plot.axvline(1993, color='green', label='Magic First Comes Out (1993)')
+    # mean_plot.axvline(1998, color='brown', label='Urza\'s Saga (1998)')
+    # mean_plot.axvline(2002, color='yellow', label='Onslaught Set Released (2002)')
+    # mean_plot.axvline(2016, color='purple', label='Eternal Masters Set Released (2016)')
+    # mean_plot.axvline(2019, color='red', label='Fire Design Principle Implemented (2019)')
+
+    mean_plot.legend()
+
+    # Median plot
+    median_plot.set_xlabel('Release Year')
+    median_plot.set_ylabel('Median Price (USD)')
+    median_plot.set_title(f'Median Card Price from Cheapest Set Release Based on {listing_date} Listing (USD)')
+    median_plot.plot(trimmed_df['release_year'], trimmed_df['median'])
+
+    # TODO: Figure out sets which contextualize this plot
+    # median_plot.axvline(1993, color='green', label='Magic First Comes Out (1993)')
+    # median_plot.axvline(2019, color='red', label='Fire Design Principle Implemented (2019)')
+
+    median_plot.legend()
+
+    caption: str = "The set a card is associated with is drawn from the set where it has the cheapest price, as per the daily listings."
+    # fig.figtext(x=0, y=-0.1, s=caption, wrap=True, horizontalalignment='left')
+    fig.tight_layout()
+    fig.savefig(os.path.join(c.IMAGE_DIRECTORY, 'average_card_price_over_time.png'))
+    fig.show()
 
 def plot_stacked_set_counts(card_counts_df: pd.DataFrame, set_year_df: pd.DataFrame, format: str):
     """

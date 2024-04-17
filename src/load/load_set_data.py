@@ -13,7 +13,9 @@ import pandas as pd
 import json
 
 import src.constants as c
+from src.calculate import calculate_market_data as cmd
 from src.load import load_card_data as lcd
+from src.load import load_price_data as lpd
 from src.load import load_tournament_data as ltd
 
 def load_augmented_set_data(
@@ -47,9 +49,15 @@ def load_augmented_set_data(
 
     # Get all the banned cards
     banned_set_counts: pd.DataFrame = load_format_set_ban_counts(format)
+    augmented_data: pd.DataFrame = set_counts.merge(banned_set_counts, on=['set_code'])
+
+    # Calculate mean/median/std for set price
+    card_price_df: pd.DataFrame = lpd.load_card_price_df()
+    aggregated_set_prices: pd.DataFrame = cmd.calculate_aggregate_set_prices(card_price_df)
+    augmented_data = augmented_data.merge(aggregated_set_prices, on='set_code')
 
     # Merge banned set cards into set counts DF
-    return set_counts.merge(banned_set_counts, on=['set_code'])
+    return augmented_data
 
 def save_format_set_ban_counts(
         all_printings: dict,
