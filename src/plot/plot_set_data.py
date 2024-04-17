@@ -10,6 +10,7 @@ Date Created: 4/14/24
 import datetime
 from matplotlib import pyplot as plt
 import matplotlib.patches as mpatches
+import numpy as np
 import os
 import pandas as pd
 
@@ -49,7 +50,7 @@ def plot_superimposed_max_min_metrics_by_year(
     :param listing_date:  Date which card listings are gathered from. 
     """
 
-    plt.style.use('ggplot')
+    plt.style.use('seaborn-white')
     plt.figure(figsize=(10, 8))
     plt.title(f'{listing_date} - Max/Min Metrics For Sets Per Year')
     plt.tight_layout(pad=4)
@@ -129,7 +130,7 @@ def plot_max_min_metrics_by_year(
         max_line_patch = mpatches.Patch(color=coral, label=f'Max {label} Value', linestyle='-')
         min_line_patch = mpatches.Patch(color=steel_blue, label=f'Min {label} Value', linestyle='-')
 
-        plt.style.use('ggplot')
+        plt.style.use('seaborn-white')
         plt.figure(figsize=(10, 8))
         plt.title(f'{listing_date} - Max/Min {label} Metrics For Sets Per Year')
         plt.tight_layout(pad=4)
@@ -167,8 +168,8 @@ def plot_max_min_metrics_by_year(
 def plot_average_card_price_over_time(
         card_price_df: pd.DataFrame, 
         listing_date: datetime.date, 
-        start_year: int = 1993, 
-        end_year: int = 2023
+        start_year: int = 1991, 
+        end_year: int = 2023,
     ):
     """
     Function which plots the average card price based on the year of the set 
@@ -184,8 +185,7 @@ def plot_average_card_price_over_time(
     agg_df: pd.DataFrame = card_price_df.groupby(['release_year'])['price'].agg(['mean', 'median', 'std']).reset_index()
     trimmed_df: pd.DataFrame = agg_df[(agg_df['release_year'] >= start_year) & (agg_df['release_year'] <= end_year)]
 
-    fig, (mean_plot, median_plot) = plt.subplots(2, 1, sharex=True)
-    fig.set_figheight(8)
+    fig, (mean_plot, median_plot) = plt.subplots(2, 1, sharex=True, figsize=(10, 8))
 
     # Mean plot
     mean_plot.set_xlabel('Release Year')
@@ -193,26 +193,27 @@ def plot_average_card_price_over_time(
     mean_plot.set_title(f'Mean Card Price from Cheapest Set Release Based on {listing_date} Listing (USD)')
     mean_plot.plot(trimmed_df['release_year'], trimmed_df['mean'])
 
-    # TODO: Figure out sets which contextualize this plot
-    # mean_plot.axvline(1993, color='green', label='Magic First Comes Out (1993)')
-    # mean_plot.axvline(1998, color='brown', label='Urza\'s Saga (1998)')
-    # mean_plot.axvline(2002, color='yellow', label='Onslaught Set Released (2002)')
-    # mean_plot.axvline(2016, color='purple', label='Eternal Masters Set Released (2016)')
-    # mean_plot.axvline(2019, color='red', label='Fire Design Principle Implemented (2019)')
-
-    mean_plot.legend()
-
     # Median plot
     median_plot.set_xlabel('Release Year')
     median_plot.set_ylabel('Median Price (USD)')
     median_plot.set_title(f'Median Card Price from Cheapest Set Release Based on {listing_date} Listing (USD)')
     median_plot.plot(trimmed_df['release_year'], trimmed_df['median'])
 
-    # TODO: Figure out sets which contextualize this plot
-    # median_plot.axvline(1993, color='green', label='Magic First Comes Out (1993)')
-    # median_plot.axvline(2019, color='red', label='Fire Design Principle Implemented (2019)')
+    # Add additional context to plots
+    handles: list = []
+    legend_params: list[tuple] = [
+        (1993, 'green', '--', 'Magic First Comes Out (1993)'),
+        (2019, 'red', '--', 'Fire Design Principle Implemented (2019)'),
+        (2021, 'blue', '--', 'Modern Horizons 2 Released (2021)'),
+    ]
 
-    median_plot.legend()
+    for year, color, linestyle, label in legend_params:
+        mean_plot.axvline(year - 0.5, color=color, linestyle=linestyle, label=label)
+        median_plot.axvline(year - 0.5, color=color, linestyle=linestyle, label=label)
+        handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=label))
+
+    mean_plot.legend(handles=handles, loc='upper center', bbox_to_anchor=[0.55, 0.95])
+    median_plot.legend(handles=handles, loc='upper center', bbox_to_anchor=[0.55, 0.95])
 
     caption: str = "The set a card is associated with is drawn from the set where it has the cheapest price, as per the daily listings."
     # fig.figtext(x=0, y=-0.1, s=caption, wrap=True, horizontalalignment='left')
@@ -220,7 +221,7 @@ def plot_average_card_price_over_time(
     fig.savefig(os.path.join(c.IMAGE_DIRECTORY, 'average_card_price_over_time.png'))
     fig.show()
 
-def plot_stacked_set_counts(card_counts_df: pd.DataFrame, set_year_df: pd.DataFrame, format: str):
+def plot_stacked_set_counts(card_counts_df: pd.DataFrame, set_year_df: pd.DataFrame, format: str, relative: bool = True):
     """
     Function which creates a stacked histogram for the prevalence of card usage based on the
     number of times cards from the set get used based on the set release year.
@@ -228,9 +229,26 @@ def plot_stacked_set_counts(card_counts_df: pd.DataFrame, set_year_df: pd.DataFr
     :param card_counts_df: Dataframe with the card counts.
     :param set_year_df:    Dataframe with the set and release year.
     :param format:         String for the format file (for saving file).
+    :param relative:       Boolean flag for if the histogram should be in relative measures (%).
     """
+    
     # Grouping by 'set_year' and 'set_name', and summing up 'total_count'
-    grouped_data = card_counts_df.groupby(['set_year', 'set_name'])['total_count'].sum().unstack().fillna(0)
+    grouped_data = card_counts_df.groupby(['release_year', 'set_code'])['total_count'].sum().unstack().fillna(0)
+
+    xlabel: str = 'Year'
+    if relative:
+        # Convert to percentage
+        total_count: int = card_counts_df['total_count'].sum()
+        grouped_data /= total_count
+        grouped_data *= 100
+        # Labels
+        title: str = '% of Total Cards Played by Set and Year'
+        ylabel: str = '% of Total Cards Played' 
+        file_name: str = '{format}_stacked_set_relative.png'
+    else:
+        title: str = 'Card Play Counts by Set and Year'
+        ylabel: str = 'Total Card Count' 
+        file_name: str = '{format}_stacked_set_counts.png'
 
     # Creating a DataFrame with 'set_name' as a column
     sets = pd.DataFrame({'set_name': grouped_data.columns})
@@ -239,16 +257,41 @@ def plot_stacked_set_counts(card_counts_df: pd.DataFrame, set_year_df: pd.DataFr
     sets = pd.merge(sets, set_year_df, on='set_name', how='left')
 
     # Plotting the data as a stacked bar chart
+    plt.style.use('seaborn-white')
     plt.figure(figsize=(12, 8))  # Adjust the figure size as needed
-    grouped_data.plot(kind='bar', stacked=True, legend=None)
 
-    # Title and axis labels for the stacked bar chart
-    plt.title('Card Counts by Set Name and Year')
-    plt.xlabel('Year')
-    plt.ylabel('Total Card Count')
-    plt.tight_layout()
-    plt.savefig(os.path.join(c.IMAGE_DIRECTORY, f'{format}_stacked_set_counts.png'))
+    grouped_data.reset_index(inplace=True)
+    grouped_data['release_year'] = grouped_data['release_year'].astype('int32')
+
+    grouped_data.plot(kind='bar', x='release_year', stacked=True, legend=None)
+
+    min_year = grouped_data['release_year'].min()
+
+    # Add additional context to plot
+    handles: list = []
+    legend_params: list[tuple] = [
+        (1993, 'green', '--', 'Magic First Comes Out (1993)'),
+        (2019, 'red', '--', 'Fire Design Principle Implemented (2019)'),
+        (2021, 'blue', '--', 'Modern Horizons 2 Released (2021)'),
+    ]
+
+    for year, color, linestyle, label in legend_params:
+        # 0.5 is a slight spacer before the bar
+        plt.axvline(year - min_year - 0.5, color=color, linestyle=linestyle)
+        handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=label))
+
+    plt.legend(handles=handles)
+
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.xlim(1991 - min_year, 2025 - min_year)
+    plt.ylabel(ylabel)
+    plt.tick_params(axis='x', rotation=45)
+
+    plt.tight_layout()    
+    plt.savefig(os.path.join(c.IMAGE_DIRECTORY, file_name))
     plt.show()
+    plt.rcParams.update(plt.rcParamsDefault)
 
 def plot_set_table(set_card_usages_and_bans: pd.DataFrame):
     """
@@ -286,3 +329,4 @@ def plot_set_table(set_card_usages_and_bans: pd.DataFrame):
 
     plt.savefig(os.path.join(c.IMAGE_DIRECTORY, 'sets.png'), bbox_inches='tight')  # Save the figure with tight bounding box
     plt.show()
+    plt.rcParams.update(plt.rcParamsDefault)

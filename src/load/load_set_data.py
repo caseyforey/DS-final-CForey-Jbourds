@@ -41,10 +41,10 @@ def load_augmented_set_data(
     
     # Load tournament usages
     base_path: str = os.path.join(data_directory, year)
-    card_tournament_usage: pd.DataFrame = ltd.load_format_card_counts(base_path, format)
+    tournament_card_counts, _ = ltd.load_format_card_counts(base_path, format)
 
     # Get the usage for each card, and sum the total number of used cards per set
-    format_card_usage: pd.DataFrame = first_format_printings.merge(card_tournament_usage, on=['card_name'])
+    format_card_usage: pd.DataFrame = first_format_printings.merge(tournament_card_counts, on=['card_name'])
     set_counts: pd.DataFrame = format_card_usage.groupby(['set_code'])['total_count'].sum().reset_index()
 
     # Get all the banned cards
