@@ -330,3 +330,46 @@ def plot_set_table(set_card_usages_and_bans: pd.DataFrame):
     plt.savefig(os.path.join(c.IMAGE_DIRECTORY, 'sets.png'), bbox_inches='tight')  # Save the figure with tight bounding box
     plt.show()
     plt.rcParams.update(plt.rcParamsDefault)
+
+def plot_outlier_distribution(outliers: pd.DataFrame):
+    # Generate a histogram of outlier release years
+    plt.style.use('seaborn-white')
+    plt.figure(figsize=(10, 6))
+    plt.hist(outliers['release_year'], bins=20, color='skyblue', edgecolor='black', alpha=0.7)
+    plt.title('Histogram of Outlier Release Years')
+    plt.xlabel('Set Release Year')
+    plt.ylabel('Number of Outlier Sets')
+
+    # Set x-axis ticks to integer years only
+    min_year = 1992
+    max_year = 2023
+    plt.xticks(np.arange(min_year, max_year + 1, 1), rotation=45)
+
+    # Add additional context to plot with axvlines
+    handles = []
+    legend_params = [
+        (1993, 'green', '--', 'Magic First Comes Out (1993)'),
+        (2019, 'red', '--', 'Fire Design Principle Implemented (2019)'),
+    ]
+
+    for year, color, linestyle, label in legend_params:
+        # 0.5 is a slight spacer before the bar
+        plt.axvline(year - 0.5, color=color, linestyle=linestyle)
+        handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=label))
+
+    plt.legend(handles=handles)
+
+    # Calculate total number of outliers
+    total_outliers = len(outliers)
+
+    # Calculate percentage released after fire design principle
+    outliers_after_fire_design = outliers[outliers['release_year'] >= 2019]
+    percentage_after_fire_design = (len(outliers_after_fire_design) / total_outliers) * 100
+
+    # Add caption
+    caption = f"Total outliers: {total_outliers}\nPercentage released after fire design principle: {percentage_after_fire_design:.2f}%"
+    plt.text(0.5, -0.2, caption, horizontalalignment='center', verticalalignment='center', transform=plt.gca().transAxes)
+
+
+    plt.show()
+    plt.rcParams.update(plt.rcParamsDefault)
