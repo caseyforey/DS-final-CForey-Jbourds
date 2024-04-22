@@ -109,7 +109,7 @@ def plot_superimposed_max_min_metrics_by_year(
             plt.annotate(txt, (max_df['release_year'].iloc[i], max_df[metric].iloc[i]), 
                          ha='center', va='bottom', xytext=(0, 5), textcoords='offset points')
 
-        plt.xticks(min_df['release_year'], rotation=90)
+        plt.xticks(min_df['release_year'], rotation=45)
         plt.savefig(os.path.join(c.IMAGE_DIRECTORY, f'superimposed_metrics_plot.png'))
 
     plt.legend(handles=handles)
@@ -185,7 +185,7 @@ def plot_max_min_metrics_by_year(
             plt.annotate(txt, (max_df['release_year'].iloc[i], max_df[metric].iloc[i]), 
                          ha='center', va='bottom', xytext=(0, 5), textcoords='offset points')
 
-        plt.xticks(min_df['release_year'], rotation=90)
+        plt.xticks(min_df['release_year'], rotation=45)
         plt.legend(handles=handles, loc='upper center', bbox_to_anchor=(0.5, -0.1), ncol=2, borderaxespad=1.0)
 
         plt.savefig(os.path.join(c.IMAGE_DIRECTORY, f'{metric}_min_max_plot.png'), bbox_inches='tight') # Adjusted to include bbox_inches='tight'
@@ -354,12 +354,21 @@ def plot_set_table(set_card_usages_and_bans: pd.DataFrame):
     plt.show()
     plt.rcParams.update(plt.rcParamsDefault)
 
-def plot_outlier_distribution(outliers: pd.DataFrame):
+def plot_outlier_distribution(
+        outliers: pd.DataFrame,
+        format: str,
+    ):
+    """
+    Function to plot the outlier distribution histogram.
+
+    :param outliers: Dataframe with outliers.
+    :param format: Set format the outliers are from.
+    """
     # Generate a histogram of outlier release years
     plt.style.use('seaborn-white')
     plt.figure(figsize=(10, 6))
     plt.hist(outliers['release_year'], bins=20, color='skyblue', edgecolor='black', alpha=0.7)
-    plt.title('Histogram of Outlier Release Years')
+    plt.title(f'Histogram of Outlier Release Years from {format.capitalize()} Data')
     plt.xlabel('Set Release Year')
     plt.ylabel('Number of Outlier Sets')
 

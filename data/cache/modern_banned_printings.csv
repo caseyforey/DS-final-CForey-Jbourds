@@ -1,44 +1,4 @@
 card_name,set_code,card_id,rarity
-Simian Spirit Guide,A25,75138bb9-25b3-56b7-88ff-641e16eb2845,uncommon
-Simian Spirit Guide,PLC,00845562-0b07-5c79-b903-9d2febceddd3,common
-Simian Spirit Guide,PLST,7f7fb25f-be66-55db-9a0e-15fa4d9fb7c4,common
-Simian Spirit Guide,SLD,4262d037-dffa-53a6-9062-9bcf5ac4d84c,rare
-Simian Spirit Guide,TSR,49cf85f2-d2f1-53e1-a82f-6cc880b7a930,common
-Seat of the Synod,BRC,b1cbf648-3779-54da-a1d9-423b30b67fbb,common
-Seat of the Synod,C16,c32c92c5-d844-52ab-aa2e-e578effa8ec5,common
-Seat of the Synod,C18,2d8710de-31a8-52a8-a4ce-5a6496012941,common
-Seat of the Synod,DDF,5ef22061-afe1-5938-b3dd-cee2e48a652b,common
-Seat of the Synod,DDU,c36fe355-b36f-5d33-8d65-6a87ab3c5151,common
-Seat of the Synod,HOP,9638b883-f9d5-5b5f-9956-2a8f60660971,common
-Seat of the Synod,J22,73c74309-e0f4-5f84-8ff9-37ecf3508b6c,common
-Seat of the Synod,MRD,35255e8a-029e-53a2-82b0-0180711c0644,common
-Seat of the Synod,SLD,040bfcf1-dd45-545e-8a4c-2f5078a8b0c0,rare
-Seat of the Synod,TD2,a3f58c65-814a-56fe-a506-7120e096994c,common
-Seat of the Synod,WC04,8473985a-529f-547e-81bf-e2d278537737,common
-Up the Beanstalk,WOE,f62e346d-027a-5bd5-b6a8-62413c3b1ebc,uncommon
-Gitaxian Probe,F12,4a334d73-e2fd-533a-a6a9-a822f767bbc7,rare
-Gitaxian Probe,NPH,46575881-efb3-5df5-93aa-2ed44b7852da,common
-Gitaxian Probe,PLST,3f7907f5-2568-56ad-984c-f47bce5de0f9,common
-Gitaxian Probe,PRM,c1e4bebe-6cc5-5fb4-a579-7528b4290866,common
-Field of the Dead,M20,58298e4b-7194-5412-b7cd-004f0f5bbdf7,rare
-Field of the Dead,PM20,0a9e3325-b0e4-5587-84f7-b3c66244f543,rare
-Field of the Dead,SLD,fab0d7b9-51c2-549a-8ec4-4777b6695155,rare
-Field of the Dead,SPG,cf40a224-f293-5610-b543-eaeba6acc60c,mythic
-Mystic Sanctuary,ELD,649ffc40-4d61-599d-a2fa-17e99032d00c,common
-Mystic Sanctuary,MKC,95c20752-1a40-5359-8d87-a4b695f9ffbe,common
-Mystic Sanctuary,TSR,9a6845c8-278f-50cf-a3bf-13bfd919de84,special
-Chrome Mox,2XM,0788dfb0-f4d8-54c0-b158-ee2a644521b3,mythic
-Chrome Mox,EMA,6ae990d1-0777-50a7-af3f-2753261602dd,mythic
-Chrome Mox,MPS,1def85e0-b22f-50da-bdea-82ae221bafd3,special
-Chrome Mox,MRD,3b84c096-d20b-54a2-b09e-959bb5ff5e94,rare
-Chrome Mox,PGPX,a4c78e97-5641-5a60-a80d-612757d0ab50,rare
-Chrome Mox,PRM,933dddf0-2caf-5700-93a6-e5db991dd6f6,rare
-Chrome Mox,SLC,f628a0da-a106-5ba7-badf-83eabf70160c,mythic
-Chrome Mox,WC04,a4737aac-0b52-500b-b102-616243da654c,rare
-"Yorion, Sky Nomad",IKO,1b6b455a-34dd-5426-99c5-13f60e9bfcb4,rare
-"Yorion, Sky Nomad",MUL,079674cd-a95e-5691-9877-df76f67c7aed,rare
-"Yorion, Sky Nomad",PIKO,fa069daa-e9f2-5b00-b25f-105927194c0d,rare
-"Yorion, Sky Nomad",PRM,824aa8d8-55c5-52f6-9b7d-224ff39e29d7,rare
 Dread Return,2XM,978a7807-5f69-5550-8334-1cc4d1ff9ecf,uncommon
 Dread Return,40K,2be20914-b5f4-5096-aac1-1ed0b0aab73a,uncommon
 Dread Return,C14,b95f5c23-5009-5e5b-ab96-a1af9f881df9,uncommon
@@ -51,6 +11,10 @@ Dread Return,PRM,7dded9b2-4d4f-50b1-9a6c-c1ed36243432,uncommon
 Dread Return,TD0,a387f942-3444-5eb9-a820-550ef21be700,uncommon
 Dread Return,TSP,8ec728f7-587c-516f-8632-bceb75e39863,uncommon
 Dread Return,TSR,c7006b88-1122-5ec8-aa58-fe7ab85a3b57,uncommon
+Green Sun's Zenith,2X2,60bd2419-35d8-505a-b8ba-d8a9f5c76d8b,rare
+Green Sun's Zenith,EMA,4a9893ea-e327-5c46-810d-99903fd7a952,rare
+Green Sun's Zenith,MBS,8a3a1680-762c-5b06-ac86-3b1dbb2b3bc3,rare
+Green Sun's Zenith,V13,1c535260-9119-5411-8b3e-516efb708d0e,mythic
 Great Furnace,BRC,447afeaf-6263-5e98-a3c7-ecce82b2cd3b,common
 Great Furnace,C14,99656e19-3a83-5083-94fd-07f4877051cc,common
 Great Furnace,C18,9946a62d-c416-5cc6-a9ea-aad716805d4d,common
@@ -62,50 +26,132 @@ Great Furnace,MRD,a2431ece-7fe5-53ae-9e3a-591546241d1c,common
 Great Furnace,PLST,251c9f59-d76c-5738-a45d-f385f2dd7176,common
 Great Furnace,SLD,4e66bc54-668f-5990-91ee-a4749cc3f2d0,rare
 Great Furnace,WC04,b546f01c-1f65-5f51-8100-4b11b93e7a9f,common
+Arcum's Astrolabe,MH1,cdd2af65-c719-5ec1-8146-b0560b4b9979,common
+Arcum's Astrolabe,PLST,3d51c14d-c636-5aa7-9dcf-41bedce1ed7a,common
+Umezawa's Jitte,BOK,b9eb9778-51c7-5c12-8524-4aaaf14c68c3,rare
+Umezawa's Jitte,PGPX,1061d758-e8b8-5851-8c98-d8258b5f55c5,rare
+Umezawa's Jitte,PLST,f09743b7-c9ff-523f-b433-f26fff20f8f9,rare
+Umezawa's Jitte,PRM,d17f1423-d5e8-5aaa-b436-861a5c077330,rare
+Umezawa's Jitte,SLD,b3755d49-6c88-5d53-af96-94c627dcf454,rare
+Umezawa's Jitte,TD0,91df211c-4ddd-5035-a629-85708aa1d634,rare
+Umezawa's Jitte,V16,bce26340-ab20-57d5-9003-2b66a10cae83,mythic
+"Hogaak, Arisen Necropolis",MH1,6157b0c4-d9da-58ef-b828-fadaa2e7aeae,rare
+Golgari Grave-Troll,DDJ,62465ed0-8801-53f2-9a0c-387ece92ea3e,rare
+Golgari Grave-Troll,RAV,11bc8f66-b5b3-54a7-b76c-f6291c194e2d,rare
+Golgari Grave-Troll,RVR,f38ae5ea-9a27-586c-b8fe-3e5ad128386a,rare
+Golgari Grave-Troll,TD0,d8a25835-9e7d-52c1-855c-b56bc5fe56ef,rare
+Golgari Grave-Troll,UMA,14d619ef-fdb3-59af-b738-e8bd2925a203,rare
+"Oko, Thief of Crowns",ELD,46153afe-5e05-5082-852a-648c03924bcf,mythic
+"Oko, Thief of Crowns",PELD,3d8884e6-75a2-5422-98e0-44b155f71db7,mythic
+"Oko, Thief of Crowns",PRM,bdb60241-5e6a-5e91-b05a-7ac239c13671,mythic
+Krark-Clan Ironworks,5DN,6dc2e300-bda8-55c7-996b-a790ae396632,uncommon
+Krark-Clan Ironworks,WC04,ae2f8e5e-f20c-5682-ab63-b0eeb7fdfde2,rare
+Lurrus of the Dream-Den,IKO,d15f90a4-afd5-57d0-b303-07e32be36648,rare
+Lurrus of the Dream-Den,MUL,ec82b125-3db4-5a97-8ff9-603be9d41253,rare
+Lurrus of the Dream-Den,PIKO,0abf663b-94e3-5d54-96ae-420220cdf96c,rare
+Lurrus of the Dream-Den,PRM,2e8c7ff7-36a4-5875-8caa-512bf7ef3e5c,rare
+Lurrus of the Dream-Den,Q06,9f2f8507-5194-5b91-9c34-91fcdf04029f,rare
+Splinter Twin,MM2,6a99851f-6e0d-5720-af9f-252117baf0a1,rare
+Splinter Twin,PLST,887a02ed-f872-57c4-b068-c769911bbd5c,rare
+Splinter Twin,ROE,82526226-c84f-5167-8fd2-0c559b214e6c,rare
 Eye of Ugin,EXP,2657a25a-7da9-5ead-a49e-3aa3a7e3bbc6,mythic
 Eye of Ugin,J20,4260c4d8-1eba-5d2c-84c5-d582e18fc4d5,rare
 Eye of Ugin,MM2,688e5b80-1eb3-587c-8c83-8c6df5c9ec8e,rare
 Eye of Ugin,WWK,820ca3a0-e631-5d0e-8e44-94b45d801f0f,mythic
-"Hogaak, Arisen Necropolis",MH1,6157b0c4-d9da-58ef-b828-fadaa2e7aeae,rare
-Blazing Shoal,BOK,1885479d-9ce3-52f8-a853-1cb28cc17c39,rare
-Blazing Shoal,PLST,dfe6b9a0-f6cb-56e4-86e9-a55821427c5c,rare
-Krark-Clan Ironworks,5DN,6dc2e300-bda8-55c7-996b-a790ae396632,uncommon
-Krark-Clan Ironworks,WC04,ae2f8e5e-f20c-5682-ab63-b0eeb7fdfde2,rare
-Arcum's Astrolabe,MH1,cdd2af65-c719-5ec1-8146-b0560b4b9979,common
-Arcum's Astrolabe,PLST,3d51c14d-c636-5aa7-9dcf-41bedce1ed7a,common
-Skullclamp,40K,32c6af93-5535-5353-9798-61da9127cca5,uncommon
-Skullclamp,BRC,dc2544fd-1734-5177-8bde-8e033ae0c163,uncommon
-Skullclamp,C14,10db22dc-76cc-57f1-84aa-0f9854b0d677,uncommon
-Skullclamp,C15,2898d477-3710-59ed-9af5-6330bfa18a83,uncommon
-Skullclamp,C16,d1f4890b-b9ad-5166-b1a9-e2d5167a537f,uncommon
-Skullclamp,C17,15521245-6b2b-56bb-8b13-ee6ba408df3f,uncommon
-Skullclamp,C20,b1e874f1-3205-5927-a5fd-ba3ebd5524c3,uncommon
-Skullclamp,CLB,57e3760f-4d20-5dcc-95ca-ad8e05871d3f,uncommon
-Skullclamp,CMA,071ec598-f6cf-50d0-b3ac-aef49ac22538,uncommon
-Skullclamp,CMD,cc01e401-abcf-59dd-b68c-521e50c151d0,uncommon
-Skullclamp,DST,4df374aa-8bec-5152-b634-c18956d02ccd,uncommon
-Skullclamp,MOC,7b47a041-45a5-5f2b-bf2d-472d08036ccc,uncommon
-Skullclamp,PIP,32d9eb4a-a622-5a8f-ba5c-5ad2290f75af,uncommon
-Skullclamp,PLST,57e8306b-96bd-5186-be82-ccb39eb1aaf5,uncommon
-Skullclamp,SLD,0f4899b6-2178-5d39-ac52-b5d342a30b0e,rare
-Skullclamp,TD0,676fbfd1-fc09-565f-a01a-2fdc901358ca,uncommon
-Skullclamp,V09,3e39f3a7-0461-5881-b552-48ed7d0ee37b,mythic
-Skullclamp,VMA,ddaccb92-ed50-5e07-b4e8-22c4c681c20c,mythic
+"Yorion, Sky Nomad",IKO,1b6b455a-34dd-5426-99c5-13f60e9bfcb4,rare
+"Yorion, Sky Nomad",MUL,079674cd-a95e-5691-9877-df76f67c7aed,rare
+"Yorion, Sky Nomad",PIKO,fa069daa-e9f2-5b00-b25f-105927194c0d,rare
+"Yorion, Sky Nomad",PRM,824aa8d8-55c5-52f6-9b7d-224ff39e29d7,rare
+Ancient Den,BRC,d22347c0-282c-570f-9712-5dc19fe8bb13,common
+Ancient Den,C21,b7149c18-c334-5731-bff7-2e86626a8fe1,common
+Ancient Den,HOP,7cf79e99-82d7-5b61-86a2-3df687438e50,common
+Ancient Den,MRD,ddb39aed-2186-5a21-ba04-03343d362a58,common
+Ancient Den,PLST,114b9212-85a9-5cef-badc-bdfaa6d45fdd,common
+Ancient Den,SLD,6d8dde8f-6971-52e5-aa9c-98981d112697,rare
+Ancient Den,TD2,b3be2082-3b62-5b13-8f9c-a41c3a5dd4e8,common
+Ancient Den,TSR,dd081b5e-7f60-5e89-91ee-77d1b14ce5a9,special
+Ancient Den,WC04,ab10ae36-18b4-543f-88aa-a6c40ee8df46,common
+Fury,MH2,35b762b0-741a-544d-a178-bde5dd7712d2,mythic
+Fury,PMH2,934879ac-dc79-5717-b2ac-a39f6642e911,mythic
+Fury,PRM,cb300cfd-57ff-536c-95b4-fba1b8cfb66e,mythic
+Rite of Flame,CSP,af228d13-6d11-5ec4-a0e3-b6b69df2e0b5,common
+Rite of Flame,PLST,41cb1192-a5c7-5aa8-b6e8-48bf5fb48696,rare
+Rite of Flame,SS3,806c43ba-eebb-5f9f-857b-d1d4f1034ba4,rare
+Summer Bloom,2X2,800500ea-5caf-5819-9c08-46717f0a1e4a,uncommon
+Summer Bloom,6ED,b6fe306d-e1c0-50d7-90ca-dbec48e1a35d,uncommon
+Summer Bloom,9ED,08c2f55b-eb4d-59b4-9bf9-ab3c5c700299,uncommon
+Summer Bloom,POR,aa046c0b-61a0-5696-8c2d-3f4c8b79bdf5,rare
+Summer Bloom,S99,e5218786-bc2b-5388-b9b0-b8cf8acf6bf3,rare
+Summer Bloom,VIS,a9704fe2-d06b-534a-ba68-becddf99bd34,uncommon
+Mox Opal,2XM,71b15a22-9e76-585f-b10c-10394291d5d3,mythic
+Mox Opal,J19,0b9ed960-c4b2-5bd7-b1b7-157ecea42422,mythic
+Mox Opal,MM2,38428eaf-113e-5a41-b79f-5f738c9599ec,mythic
+Mox Opal,MPS,f0e2805d-fa86-54b5-b778-c1e207d86ad6,special
+Mox Opal,PRM,ce9df383-0a67-5dd8-b583-41c77d36a219,mythic
+Mox Opal,SLD,94880280-4b33-5832-be36-dfa4bc94be22,mythic
+Mox Opal,SOM,766bf6fd-1dbc-5892-89c6-b98c69641451,mythic
+Up the Beanstalk,WOE,f62e346d-027a-5bd5-b6a8-62413c3b1ebc,uncommon
+Cloudpost,F10,78007587-115d-5d9a-96de-65a4aaaba9c5,rare
+Cloudpost,MRD,50fdbbf5-d4f1-5fe8-920a-c9b663a6dd19,common
+Cloudpost,PRM,2d795b38-a727-516b-bee4-1f2ccd989214,common
+Cloudpost,WC04,c09c5c5a-2d6d-525b-9e1f-e00804420fd0,common
+Second Sunrise,MRD,11c2e5a1-cfe9-549f-a32a-b2d60491ce72,rare
+Second Sunrise,PLST,f269712d-4eda-5d04-bad4-091a48bdb735,rare
+Gitaxian Probe,F12,4a334d73-e2fd-533a-a6a9-a822f767bbc7,rare
+Gitaxian Probe,NPH,46575881-efb3-5df5-93aa-2ed44b7852da,common
+Gitaxian Probe,PLST,3f7907f5-2568-56ad-984c-f47bce5de0f9,common
+Gitaxian Probe,PRM,c1e4bebe-6cc5-5fb4-a579-7528b4290866,common
+Seething Song,9ED,8ab7927a-be62-5e52-96d6-46c34f42a53d,common
+Seething Song,ARC,ec99d259-35ed-57dd-8b30-4d677bbe5117,common
+Seething Song,C21,e2bf6898-22af-5d02-bbe7-8cd636f861ca,common
+Seething Song,DDG,fbe48d85-8a0a-59c3-b341-7d794f385956,common
+Seething Song,MRD,6ad62466-e9c5-522f-9ced-23bcd15861d8,common
+Seething Song,PLST,16a16208-ebf2-59c3-bd4e-ad0c01eb4d8b,common
+Seething Song,WC04,ce2e8893-137f-5887-b0f2-fe19e960679a,common
+Seat of the Synod,BRC,b1cbf648-3779-54da-a1d9-423b30b67fbb,common
+Seat of the Synod,C16,c32c92c5-d844-52ab-aa2e-e578effa8ec5,common
+Seat of the Synod,C18,2d8710de-31a8-52a8-a4ce-5a6496012941,common
+Seat of the Synod,DDF,5ef22061-afe1-5938-b3dd-cee2e48a652b,common
+Seat of the Synod,DDU,c36fe355-b36f-5d33-8d65-6a87ab3c5151,common
+Seat of the Synod,HOP,9638b883-f9d5-5b5f-9956-2a8f60660971,common
+Seat of the Synod,J22,73c74309-e0f4-5f84-8ff9-37ecf3508b6c,common
+Seat of the Synod,MRD,35255e8a-029e-53a2-82b0-0180711c0644,common
+Seat of the Synod,SLD,040bfcf1-dd45-545e-8a4c-2f5078a8b0c0,rare
+Seat of the Synod,TD2,a3f58c65-814a-56fe-a506-7120e096994c,common
+Seat of the Synod,WC04,8473985a-529f-547e-81bf-e2d278537737,common
+Birthing Pod,J20,69082b77-1454-53d2-b9d5-d78ec2a87de6,rare
+Birthing Pod,NPH,d0bcc0c4-1735-58d6-8645-900bc9ae3a63,rare
+Birthing Pod,SLC,3039b5ab-ce29-5099-9712-c7c7ffb901fb,rare
 Punishing Fire,CMD,fbfeb975-b13e-51af-930c-ab3a83206259,uncommon
 Punishing Fire,DDG,5a76b3b3-0e13-56b8-9e22-8c0589000a2d,uncommon
 Punishing Fire,PZ1,ca190591-cc0b-56e2-9ec0-caffc7723395,uncommon
 Punishing Fire,ZEN,ebd24dcd-4197-5edd-8aef-794149bb1908,uncommon
-Vault of Whispers,40K,2b64a8a4-9685-5669-b58d-d29f511d5807,common
-Vault of Whispers,BRC,81c93af6-9b95-5eea-bbda-0124b671d30c,common
-Vault of Whispers,HOP,7f1d2371-c833-5db2-90eb-934e1e75a9bb,common
-Vault of Whispers,MRD,1f08d5e7-8e2f-517a-be40-190cb2403680,common
-Vault of Whispers,SLD,a8a96968-0bd5-5da6-af3c-80b5b0c40ea8,rare
-Vault of Whispers,WC04,c0ec68e1-7832-5a5f-a2ad-f936030bd666,common
+Tree of Tales,HOP,489dbdb2-057f-5384-8ba2-8eb8638287e2,common
+Tree of Tales,MRD,c22745b0-4f52-508a-923b-25aacf91fcd4,common
+Tree of Tales,PLST,7310da17-c7f2-5799-8c74-e10ad6cbcb91,common
+Tree of Tales,SLD,ca59dc28-2f05-5823-a176-6d5e3e3c365f,rare
+Tree of Tales,WC04,1a2e143b-001d-58f6-9463-868449fb0c4b,common
+Violent Outburst,ARB,a9f5cce0-fc4d-5b13-a782-5cd7587ade1f,common
+Violent Outburst,SLD,72bae57c-765f-5afa-a919-2d4734afa1c1,rare
+Mycosynth Lattice,BBD,85b7fc47-f44c-5dcc-8422-70566ef9f03d,mythic
+Mycosynth Lattice,DST,e4b71e49-ea0d-5063-a7c7-d121bc1ff8d8,rare
+Mycosynth Lattice,P23,a65aa874-9ceb-5c9e-a4e8-c294bfb8107e,rare
+Mycosynth Lattice,PLST,cdbfc61f-b644-5810-81ba-ea11ef4f1719,mythic
+Mycosynth Lattice,SLD,7e01508e-d53f-5acf-b984-a41ab98a7342,mythic
+Blazing Shoal,BOK,1885479d-9ce3-52f8-a853-1cb28cc17c39,rare
+Blazing Shoal,PLST,dfe6b9a0-f6cb-56e4-86e9-a55821427c5c,rare
+Tibalt's Trickery,KHM,d6ce0e70-92a3-5248-abdf-d9859aa80b6b,rare
+Tibalt's Trickery,PKHM,d666384f-aeaa-5522-b33f-16ea61e2a172,rare
+Tibalt's Trickery,PRM,7a38ca93-3a9a-57ad-8feb-0f0212d65a00,rare
 "Uro, Titan of Nature's Wrath",PLST,dd24072a-4ae8-5107-a665-a3afdca63f01,mythic
 "Uro, Titan of Nature's Wrath",PRM,eab09bb2-5b4c-524a-823e-48490fd874bf,mythic
 "Uro, Titan of Nature's Wrath",PTHB,1b004b64-e782-5e48-a013-f5ca0bc97daa,mythic
 "Uro, Titan of Nature's Wrath",SLD,5dbed221-602d-51d7-aeca-e73e6002bfa3,mythic
 "Uro, Titan of Nature's Wrath",THB,0b70248d-ff8a-555b-b003-4146ebe4370a,mythic
+Mental Misstep,NPH,0f0c9ca6-9687-5454-8d54-2c91c5d49a17,uncommon
+Mental Misstep,PEWK,1911afc1-ddcb-504c-8fad-514742c6eda9,mythic
+Mental Misstep,PMEI,99e33efb-4f74-51b1-b8c8-38e52bf38def,rare
+Mental Misstep,SLD,c2b80cb2-e06e-5214-b929-8d2569cb7496,rare
 Treasure Cruise,C16,be203d5b-ff93-5bea-9b36-fe27ced6688a,common
 Treasure Cruise,C21,d681279e-e597-56e3-8d29-984965a1dfe9,common
 Treasure Cruise,CM2,b6d4cf93-51b9-5498-a5b9-06f2442f5ba7,common
@@ -114,6 +160,23 @@ Treasure Cruise,NCC,b2677be9-2208-5e9d-af6c-5504c666111e,common
 Treasure Cruise,PLST,9e6fe2da-2f73-55cc-9fcb-3672b73b3d93,common
 Treasure Cruise,TSR,2a112a05-961c-5898-a9db-b9750dd3e63b,special
 Treasure Cruise,UMA,90a92698-0b3e-5db3-8df6-1d8fd8168771,common
+Chrome Mox,2XM,0788dfb0-f4d8-54c0-b158-ee2a644521b3,mythic
+Chrome Mox,EMA,6ae990d1-0777-50a7-af3f-2753261602dd,mythic
+Chrome Mox,MPS,1def85e0-b22f-50da-bdea-82ae221bafd3,special
+Chrome Mox,MRD,3b84c096-d20b-54a2-b09e-959bb5ff5e94,rare
+Chrome Mox,PGPX,a4c78e97-5641-5a60-a80d-612757d0ab50,rare
+Chrome Mox,PRM,933dddf0-2caf-5700-93a6-e5db991dd6f6,rare
+Chrome Mox,SLC,f628a0da-a106-5ba7-badf-83eabf70160c,mythic
+Chrome Mox,WC04,a4737aac-0b52-500b-b102-616243da654c,rare
+Deathrite Shaman,EA3,64b09f85-64ab-50c3-b347-04c1d30e5213,rare
+Deathrite Shaman,EMA,e4762986-08df-5826-ba7d-463a77ba10a6,rare
+Deathrite Shaman,GK1,967fef6e-8c63-5f2e-9c95-3794d7517cad,rare
+Deathrite Shaman,RTR,407ac6a4-cb3c-54f9-beb0-08e7e5d81c84,rare
+Deathrite Shaman,RVR,d22e69ab-e26b-51a9-b47f-c473def282f2,rare
+Deathrite Shaman,SLC,42259348-3c12-5d2f-a367-37ec8d40a7d1,rare
+Mystic Sanctuary,ELD,649ffc40-4d61-599d-a2fa-17e99032d00c,common
+Mystic Sanctuary,MKC,95c20752-1a40-5359-8d87-a4b695f9ffbe,common
+Mystic Sanctuary,TSR,9a6845c8-278f-50cf-a3bf-13bfd919de84,special
 Ponder,C18,53e68e8f-a5cc-55bf-97d9-4ec99ffca270,common
 Ponder,C21,fa72aef3-203b-5430-8eac-eec141b86c5f,common
 Ponder,J21,57337791-28ed-567c-9516-dc4c5449bd13,common
@@ -130,31 +193,6 @@ Ponder,SLD,b589541a-9fb6-51f3-a146-790fbe5ede7e,rare
 Ponder,SLP,d25135dd-3a0b-5b7f-b23b-79b483324759,rare
 Ponder,TSR,d3d4b101-fb5e-55b2-988b-2a9317e909ce,special
 Ponder,WHO,fdeb0622-f3d4-5c3c-b697-326c4c22c773,common
-Summer Bloom,2X2,800500ea-5caf-5819-9c08-46717f0a1e4a,uncommon
-Summer Bloom,6ED,b6fe306d-e1c0-50d7-90ca-dbec48e1a35d,uncommon
-Summer Bloom,9ED,08c2f55b-eb4d-59b4-9bf9-ab3c5c700299,uncommon
-Summer Bloom,POR,aa046c0b-61a0-5696-8c2d-3f4c8b79bdf5,rare
-Summer Bloom,S99,e5218786-bc2b-5388-b9b0-b8cf8acf6bf3,rare
-Summer Bloom,VIS,a9704fe2-d06b-534a-ba68-becddf99bd34,uncommon
-Umezawa's Jitte,BOK,b9eb9778-51c7-5c12-8524-4aaaf14c68c3,rare
-Umezawa's Jitte,PGPX,1061d758-e8b8-5851-8c98-d8258b5f55c5,rare
-Umezawa's Jitte,PLST,f09743b7-c9ff-523f-b433-f26fff20f8f9,rare
-Umezawa's Jitte,PRM,d17f1423-d5e8-5aaa-b436-861a5c077330,rare
-Umezawa's Jitte,SLD,b3755d49-6c88-5d53-af96-94c627dcf454,rare
-Umezawa's Jitte,TD0,91df211c-4ddd-5035-a629-85708aa1d634,rare
-Umezawa's Jitte,V16,bce26340-ab20-57d5-9003-2b66a10cae83,mythic
-Violent Outburst,ARB,a9f5cce0-fc4d-5b13-a782-5cd7587ade1f,common
-Violent Outburst,SLD,72bae57c-765f-5afa-a919-2d4734afa1c1,rare
-Dark Depths,2XM,51332a7a-56b3-5924-84e1-7f744cac6f49,mythic
-Dark Depths,CSP,7a1aab33-99c6-5756-8f30-832f2e11bc67,rare
-Dark Depths,DMR,0cfa9389-9cd7-517b-9f13-b2b0de54546f,mythic
-Dark Depths,PLST,fea5beca-617a-583c-b7ce-2435843769fc,rare
-Dark Depths,PUMA,b588b7bb-9af7-542a-9b56-f0a7f57d1190,mythic
-Dark Depths,UMA,37eb9619-1516-5cba-a071-d20f18b26183,mythic
-Dark Depths,V16,38fb3942-87fe-5bad-b681-b356a4cc407e,mythic
-Fury,MH2,35b762b0-741a-544d-a178-bde5dd7712d2,mythic
-Fury,PMH2,934879ac-dc79-5717-b2ac-a39f6642e911,mythic
-Fury,PRM,cb300cfd-57ff-536c-95b4-fba1b8cfb66e,mythic
 Faithless Looting,BRC,ef7a63d1-e635-55cc-bfa3-a769d08958e2,common
 Faithless Looting,C14,08c07578-c6fe-5946-b308-3d10f417a62f,common
 Faithless Looting,C15,3713c1af-e3ab-5d5b-8de2-994bfc9e8620,common
@@ -174,67 +212,59 @@ Faithless Looting,PZ1,579b399b-da3b-5dc8-8b29-fce1eda7d42d,uncommon
 Faithless Looting,SIS,5bd3c937-1420-5e74-9466-7ed46a7843ff,common
 Faithless Looting,STA,0639be88-adee-5b9b-94d3-efcb6ff8542f,rare
 Faithless Looting,UMA,ff3b25aa-8b4c-5b91-b0b1-0a8cfc16715a,common
-Cloudpost,F10,78007587-115d-5d9a-96de-65a4aaaba9c5,rare
-Cloudpost,MRD,50fdbbf5-d4f1-5fe8-920a-c9b663a6dd19,common
-Cloudpost,PRM,2d795b38-a727-516b-bee4-1f2ccd989214,common
-Cloudpost,WC04,c09c5c5a-2d6d-525b-9e1f-e00804420fd0,common
-Green Sun's Zenith,2X2,60bd2419-35d8-505a-b8ba-d8a9f5c76d8b,rare
-Green Sun's Zenith,EMA,4a9893ea-e327-5c46-810d-99903fd7a952,rare
-Green Sun's Zenith,MBS,8a3a1680-762c-5b06-ac86-3b1dbb2b3bc3,rare
-Green Sun's Zenith,V13,1c535260-9119-5411-8b3e-516efb708d0e,mythic
-Hypergenesis,TSP,7e9e4e57-ef52-59b0-9a74-3bb4018e1450,rare
-Hypergenesis,TSR,dc421abb-0000-5fb0-a68b-a85efa6c7f97,mythic
-Mox Opal,2XM,71b15a22-9e76-585f-b10c-10394291d5d3,mythic
-Mox Opal,J19,0b9ed960-c4b2-5bd7-b1b7-157ecea42422,mythic
-Mox Opal,MM2,38428eaf-113e-5a41-b79f-5f738c9599ec,mythic
-Mox Opal,MPS,f0e2805d-fa86-54b5-b778-c1e207d86ad6,special
-Mox Opal,PRM,ce9df383-0a67-5dd8-b583-41c77d36a219,mythic
-Mox Opal,SLD,94880280-4b33-5832-be36-dfa4bc94be22,mythic
-Mox Opal,SOM,766bf6fd-1dbc-5892-89c6-b98c69641451,mythic
-Second Sunrise,MRD,11c2e5a1-cfe9-549f-a32a-b2d60491ce72,rare
-Second Sunrise,PLST,f269712d-4eda-5d04-bad4-091a48bdb735,rare
-Mental Misstep,NPH,0f0c9ca6-9687-5454-8d54-2c91c5d49a17,uncommon
-Mental Misstep,PEWK,1911afc1-ddcb-504c-8fad-514742c6eda9,mythic
-Mental Misstep,PMEI,99e33efb-4f74-51b1-b8c8-38e52bf38def,rare
-Mental Misstep,SLD,c2b80cb2-e06e-5214-b929-8d2569cb7496,rare
-Tibalt's Trickery,KHM,d6ce0e70-92a3-5248-abdf-d9859aa80b6b,rare
-Tibalt's Trickery,PKHM,d666384f-aeaa-5522-b33f-16ea61e2a172,rare
-Tibalt's Trickery,PRM,7a38ca93-3a9a-57ad-8feb-0f0212d65a00,rare
+Field of the Dead,M20,58298e4b-7194-5412-b7cd-004f0f5bbdf7,rare
+Field of the Dead,PM20,0a9e3325-b0e4-5587-84f7-b3c66244f543,rare
+Field of the Dead,SLD,fab0d7b9-51c2-549a-8ec4-4777b6695155,rare
+Field of the Dead,SPG,cf40a224-f293-5610-b543-eaeba6acc60c,mythic
+Dark Depths,2XM,51332a7a-56b3-5924-84e1-7f744cac6f49,mythic
+Dark Depths,CSP,7a1aab33-99c6-5756-8f30-832f2e11bc67,rare
+Dark Depths,DMR,0cfa9389-9cd7-517b-9f13-b2b0de54546f,mythic
+Dark Depths,PLST,fea5beca-617a-583c-b7ce-2435843769fc,rare
+Dark Depths,PUMA,b588b7bb-9af7-542a-9b56-f0a7f57d1190,mythic
+Dark Depths,UMA,37eb9619-1516-5cba-a071-d20f18b26183,mythic
+Dark Depths,V16,38fb3942-87fe-5bad-b681-b356a4cc407e,mythic
+Vault of Whispers,40K,2b64a8a4-9685-5669-b58d-d29f511d5807,common
+Vault of Whispers,BRC,81c93af6-9b95-5eea-bbda-0124b671d30c,common
+Vault of Whispers,HOP,7f1d2371-c833-5db2-90eb-934e1e75a9bb,common
+Vault of Whispers,MRD,1f08d5e7-8e2f-517a-be40-190cb2403680,common
+Vault of Whispers,SLD,a8a96968-0bd5-5da6-af3c-80b5b0c40ea8,rare
+Vault of Whispers,WC04,c0ec68e1-7832-5a5f-a2ad-f936030bd666,common
+Once Upon a Time,ELD,0add0930-720f-5bf5-bcf5-ee208eeb9040,rare
+Once Upon a Time,PELD,58891a3e-f05f-5939-81aa-f98d7890951b,rare
+Once Upon a Time,PLST,3ffbea2a-bfdf-5c1f-abc3-be5746b63c00,rare
 Sensei's Divining Top,2X2,1a871666-a17b-51c4-9f96-8202311eaeb1,rare
 Sensei's Divining Top,CHK,005d7725-aae9-516b-9b4d-59f6fdd2d686,uncommon
 Sensei's Divining Top,EMA,3b24df41-5116-503a-82ad-ee292c94237f,rare
 Sensei's Divining Top,PLST,a8392195-ab57-51fa-ad1b-fbf1d3d04bb7,rare
 Sensei's Divining Top,PRM,fea08b4d-fb2c-5ac1-bd6e-d9e6d14b6366,rare
 Sensei's Divining Top,V09,76603b1d-70d9-5dd5-b9f3-323051e1308e,mythic
-Ancient Den,BRC,d22347c0-282c-570f-9712-5dc19fe8bb13,common
-Ancient Den,C21,b7149c18-c334-5731-bff7-2e86626a8fe1,common
-Ancient Den,HOP,7cf79e99-82d7-5b61-86a2-3df687438e50,common
-Ancient Den,MRD,ddb39aed-2186-5a21-ba04-03343d362a58,common
-Ancient Den,PLST,114b9212-85a9-5cef-badc-bdfaa6d45fdd,common
-Ancient Den,SLD,6d8dde8f-6971-52e5-aa9c-98981d112697,rare
-Ancient Den,TD2,b3be2082-3b62-5b13-8f9c-a41c3a5dd4e8,common
-Ancient Den,TSR,dd081b5e-7f60-5e89-91ee-77d1b14ce5a9,special
-Ancient Den,WC04,ab10ae36-18b4-543f-88aa-a6c40ee8df46,common
-"Oko, Thief of Crowns",ELD,46153afe-5e05-5082-852a-648c03924bcf,mythic
-"Oko, Thief of Crowns",PELD,3d8884e6-75a2-5422-98e0-44b155f71db7,mythic
-"Oko, Thief of Crowns",PRM,bdb60241-5e6a-5e91-b05a-7ac239c13671,mythic
-Lurrus of the Dream-Den,IKO,d15f90a4-afd5-57d0-b303-07e32be36648,rare
-Lurrus of the Dream-Den,MUL,ec82b125-3db4-5a97-8ff9-603be9d41253,rare
-Lurrus of the Dream-Den,PIKO,0abf663b-94e3-5d54-96ae-420220cdf96c,rare
-Lurrus of the Dream-Den,PRM,2e8c7ff7-36a4-5875-8caa-512bf7ef3e5c,rare
-Lurrus of the Dream-Den,Q06,9f2f8507-5194-5b91-9c34-91fcdf04029f,rare
+Skullclamp,40K,32c6af93-5535-5353-9798-61da9127cca5,uncommon
+Skullclamp,BRC,dc2544fd-1734-5177-8bde-8e033ae0c163,uncommon
+Skullclamp,C14,10db22dc-76cc-57f1-84aa-0f9854b0d677,uncommon
+Skullclamp,C15,2898d477-3710-59ed-9af5-6330bfa18a83,uncommon
+Skullclamp,C16,d1f4890b-b9ad-5166-b1a9-e2d5167a537f,uncommon
+Skullclamp,C17,15521245-6b2b-56bb-8b13-ee6ba408df3f,uncommon
+Skullclamp,C20,b1e874f1-3205-5927-a5fd-ba3ebd5524c3,uncommon
+Skullclamp,CLB,57e3760f-4d20-5dcc-95ca-ad8e05871d3f,uncommon
+Skullclamp,CMA,071ec598-f6cf-50d0-b3ac-aef49ac22538,uncommon
+Skullclamp,CMD,cc01e401-abcf-59dd-b68c-521e50c151d0,uncommon
+Skullclamp,DST,4df374aa-8bec-5152-b634-c18956d02ccd,uncommon
+Skullclamp,MOC,7b47a041-45a5-5f2b-bf2d-472d08036ccc,uncommon
+Skullclamp,PIP,32d9eb4a-a622-5a8f-ba5c-5ad2290f75af,uncommon
+Skullclamp,PLST,57e8306b-96bd-5186-be82-ccb39eb1aaf5,uncommon
+Skullclamp,SLD,0f4899b6-2178-5d39-ac52-b5d342a30b0e,rare
+Skullclamp,TD0,676fbfd1-fc09-565f-a01a-2fdc901358ca,uncommon
+Skullclamp,V09,3e39f3a7-0461-5881-b552-48ed7d0ee37b,mythic
+Skullclamp,VMA,ddaccb92-ed50-5e07-b4e8-22c4c681c20c,mythic
+Hypergenesis,TSP,7e9e4e57-ef52-59b0-9a74-3bb4018e1450,rare
+Hypergenesis,TSR,dc421abb-0000-5fb0-a68b-a85efa6c7f97,mythic
 Glimpse of Nature,CHK,b8aba793-aec1-56da-b2c5-be55deb63e26,rare
 Glimpse of Nature,SLC,410ba456-1fb5-554b-969c-a012f5b3b37a,rare
-Golgari Grave-Troll,DDJ,62465ed0-8801-53f2-9a0c-387ece92ea3e,rare
-Golgari Grave-Troll,RAV,11bc8f66-b5b3-54a7-b76c-f6291c194e2d,rare
-Golgari Grave-Troll,RVR,f38ae5ea-9a27-586c-b8fe-3e5ad128386a,rare
-Golgari Grave-Troll,TD0,d8a25835-9e7d-52c1-855c-b56bc5fe56ef,rare
-Golgari Grave-Troll,UMA,14d619ef-fdb3-59af-b738-e8bd2925a203,rare
-Tree of Tales,HOP,489dbdb2-057f-5384-8ba2-8eb8638287e2,common
-Tree of Tales,MRD,c22745b0-4f52-508a-923b-25aacf91fcd4,common
-Tree of Tales,PLST,7310da17-c7f2-5799-8c74-e10ad6cbcb91,common
-Tree of Tales,SLD,ca59dc28-2f05-5823-a176-6d5e3e3c365f,rare
-Tree of Tales,WC04,1a2e143b-001d-58f6-9463-868449fb0c4b,common
+Simian Spirit Guide,A25,75138bb9-25b3-56b7-88ff-641e16eb2845,uncommon
+Simian Spirit Guide,PLC,00845562-0b07-5c79-b903-9d2febceddd3,common
+Simian Spirit Guide,PLST,7f7fb25f-be66-55db-9a0e-15fa4d9fb7c4,common
+Simian Spirit Guide,SLD,4262d037-dffa-53a6-9062-9bcf5ac4d84c,rare
+Simian Spirit Guide,TSR,49cf85f2-d2f1-53e1-a82f-6cc880b7a930,common
 Dig Through Time,C21,7d2ef7a8-e8f6-5a77-bb42-0e5c6d4d929c,rare
 Dig Through Time,KTK,9544ddce-b079-522d-8282-541baee0ca0b,rare
 Dig Through Time,NCC,40f1911d-5b1e-510f-bc5e-51d14942ee2a,rare
@@ -244,33 +274,3 @@ Dig Through Time,PRM,bf704da8-4de5-53af-8afd-f71569db5e59,rare
 Dig Through Time,SLD,f288db5b-f80b-5d7b-bfaa-ed45910e6056,rare
 Dig Through Time,UMA,8adfd3be-8dfc-5995-8bbb-f0eb9d1113cd,rare
 Dig Through Time,WOC,e8e98b17-6825-5ef6-befe-b03c8de3281b,rare
-Once Upon a Time,ELD,0add0930-720f-5bf5-bcf5-ee208eeb9040,rare
-Once Upon a Time,PELD,58891a3e-f05f-5939-81aa-f98d7890951b,rare
-Once Upon a Time,PLST,3ffbea2a-bfdf-5c1f-abc3-be5746b63c00,rare
-Mycosynth Lattice,BBD,85b7fc47-f44c-5dcc-8422-70566ef9f03d,mythic
-Mycosynth Lattice,DST,e4b71e49-ea0d-5063-a7c7-d121bc1ff8d8,rare
-Mycosynth Lattice,P23,a65aa874-9ceb-5c9e-a4e8-c294bfb8107e,rare
-Mycosynth Lattice,PLST,cdbfc61f-b644-5810-81ba-ea11ef4f1719,mythic
-Mycosynth Lattice,SLD,7e01508e-d53f-5acf-b984-a41ab98a7342,mythic
-Splinter Twin,MM2,6a99851f-6e0d-5720-af9f-252117baf0a1,rare
-Splinter Twin,PLST,887a02ed-f872-57c4-b068-c769911bbd5c,rare
-Splinter Twin,ROE,82526226-c84f-5167-8fd2-0c559b214e6c,rare
-Seething Song,9ED,8ab7927a-be62-5e52-96d6-46c34f42a53d,common
-Seething Song,ARC,ec99d259-35ed-57dd-8b30-4d677bbe5117,common
-Seething Song,C21,e2bf6898-22af-5d02-bbe7-8cd636f861ca,common
-Seething Song,DDG,fbe48d85-8a0a-59c3-b341-7d794f385956,common
-Seething Song,MRD,6ad62466-e9c5-522f-9ced-23bcd15861d8,common
-Seething Song,PLST,16a16208-ebf2-59c3-bd4e-ad0c01eb4d8b,common
-Seething Song,WC04,ce2e8893-137f-5887-b0f2-fe19e960679a,common
-Rite of Flame,CSP,af228d13-6d11-5ec4-a0e3-b6b69df2e0b5,common
-Rite of Flame,PLST,41cb1192-a5c7-5aa8-b6e8-48bf5fb48696,rare
-Rite of Flame,SS3,806c43ba-eebb-5f9f-857b-d1d4f1034ba4,rare
-Deathrite Shaman,EA3,64b09f85-64ab-50c3-b347-04c1d30e5213,rare
-Deathrite Shaman,EMA,e4762986-08df-5826-ba7d-463a77ba10a6,rare
-Deathrite Shaman,GK1,967fef6e-8c63-5f2e-9c95-3794d7517cad,rare
-Deathrite Shaman,RTR,407ac6a4-cb3c-54f9-beb0-08e7e5d81c84,rare
-Deathrite Shaman,RVR,d22e69ab-e26b-51a9-b47f-c473def282f2,rare
-Deathrite Shaman,SLC,42259348-3c12-5d2f-a367-37ec8d40a7d1,rare
-Birthing Pod,J20,69082b77-1454-53d2-b9d5-d78ec2a87de6,rare
-Birthing Pod,NPH,d0bcc0c4-1735-58d6-8645-900bc9ae3a63,rare
-Birthing Pod,SLC,3039b5ab-ce29-5099-9712-c7c7ffb901fb,rare
