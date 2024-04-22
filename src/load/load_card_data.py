@@ -112,7 +112,7 @@ def convert_card_printings_to_df(card_printings: dict) -> pd.DataFrame:
             })
     return pd.DataFrame(flattened_data)
 
-def load_bannded_cards_array(
+def load_banned_cards_array(
         format: str, 
         data_directory: str = c.DATA_DIRECTORY, 
         cache_directory: str = c.CACHE

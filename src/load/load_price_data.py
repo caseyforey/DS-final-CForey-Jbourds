@@ -13,9 +13,10 @@ import pandas as pd
 
 from src import constants as c
 from src.load import load_utils
+import src.load.load_card_data as lcd
 import src.load.load_set_data as lsd
 
-def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: str = c.CACHE, use_cache: bool = True) -> pd.DataFrame:
+def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: str = c.CACHE, use_cache: bool = True, date_string: str = None) -> pd.DataFrame:
     """
     Function which loads information about a card's cheapest printing from the Magic the Gathering Online
     market data, along with information about the printing and set it's from.
@@ -23,19 +24,20 @@ def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: 
     :param data_directory:  String for the directory data is stored in.
     :param cache_directory: String for the directory to store cached results in.
     :param use_cache:       Boolean flag for whether the function should use cached files.
+    :param date_string:     Date string to use in the all prices dataset. Default is None to use 'AllPricesToday' dataset.
 
     :returns: Pandas dataframe with card price data.
     """
 
     # Filepaths
     # Data files
-    all_prices_filepath: str = os.path.join(data_directory, 'AllPricesToday.json')
+    all_prices_filepath: str = os.path.join(data_directory, 'AllPrices.json' if date_string else 'AllPricesToday.json')
     all_printings_filepath: str = os.path.join(data_directory, 'AllPrintings.json')
     set_list_filepath: str = os.path.join(data_directory, 'SetList.json')
     # Cache files
-    market_price_filepath: str = os.path.join(data_directory, cache_directory, 'market_prices.csv')
+    market_price_filepath: str = os.path.join(data_directory, cache_directory, f'market_prices{"_" + date_string if date_string else ""}.csv')
     unique_card_names_filepath: str = os.path.join(data_directory, cache_directory, 'unique_card_names')
-    lowest_price_printing_filepath: str = os.path.join(data_directory, cache_directory, 'lowest_price_printings.csv')
+    lowest_price_printing_filepath: str = os.path.join(data_directory, cache_directory, f'lowest_price_printings{"_" + date_string if date_string else ""}.csv')
     set_release_year_filepath: str = os.path.join(data_directory, cache_directory, 'set_release_years.csv')
 
     # If we can, skip all the intermediary steps entirely
@@ -47,16 +49,17 @@ def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: 
         unique_card_names: np.array = np.load(unique_card_names_filepath)
     else:
         all_printings: dict = load_utils.load_json_data(all_printings_filepath)
-        unique_card_names: np.array = lsd.get_unique_card_names(all_printings)
+        unique_card_names: np.array = lcd.get_unique_card_names(all_printings)
         np.save(unique_card_names_filepath, unique_card_names)
 
     # Load lowest price printings if available, otherwise compute and cache it
     if os.path.exists(lowest_price_printing_filepath) and use_cache:
+        print('Skip lowest price printing!')
         lowest_price_printing_df: pd.DataFrame = pd.read_csv(lowest_price_printing_filepath)
     else:
         all_prices: dict = load_utils.load_json_data(all_prices_filepath)
-        card_set_printings: dict[str, list[tuple[str, str]]] = lsd.get_card_printings_info(all_printings, unique_card_names)
-        lowest_price_printing_df: pd.DataFrame = get_lowest_price_printing(all_prices, card_set_printings)
+        card_set_printings: dict[str, list[tuple[str, str]]] = lcd.get_card_printings_info(all_printings, unique_card_names)
+        lowest_price_printing_df: pd.DataFrame = get_lowest_price_printing(all_prices, card_set_printings, date_string)
         lowest_price_printing_df.to_csv(lowest_price_printing_filepath, index=False)
 
     # Get the release year for all the sets
@@ -68,13 +71,15 @@ def load_card_price_df(data_directory: str = c.DATA_DIRECTORY, cache_directory: 
 
     # Join the set release year with the set the lowest price was from
     # This also gets right of all the rows without price data as well
-    full_market_df: pd.DataFrame = pd.merge(lowest_price_printing_df, set_release_year_df, left_on='set', right_on='set')
+    full_market_df: pd.DataFrame = pd.merge(lowest_price_printing_df, set_release_year_df, left_on='set', right_on='set_code')
     full_market_df.to_csv(market_price_filepath, index=False)
+
     return full_market_df
 
 def get_lowest_price_printing(
-        all_prices_today_dataset: pd.DataFrame, 
-        card_sets_uuids: dict[str: list[tuple[str, str]]]
+        all_prices: pd.DataFrame, 
+        card_sets_uuids: dict[str: list[tuple[str, str]]],
+        date_string: str = None,
     ) -> pd.DataFrame:
     """
     Function which finds the lowest price set and UUID printing for every card and compiles
@@ -82,8 +87,9 @@ def get_lowest_price_printing(
     
     NOTE: For now only looks at Magic the Gathering Online data.
 
-    :param all_prices_today_dataset: JSON dataset with all card prices from a certain data.
-    :param card_set_uuids:           Dictionary mapping every card_name to a list with each set/UUID printing pair.
+    :param all_price:      JSON dataset with all card prices from a certain data.
+    :param card_set_uuids: Dictionary mapping every card_name to a list with each set/UUID printing pair.
+    :param date_string:    Data string used as a key in the all prices dataset. Defaults to None.
 
     :returns: Pandas dataframe with the card_name and its lowest set printing.
     """
@@ -106,7 +112,7 @@ def get_lowest_price_printing(
 
     for card, printings in card_sets_uuids.items():
         for set, uuid, rarity in printings:
-            card_prices: dict[str: dict] = all_prices_today_dataset['data'].get(uuid, None)
+            card_prices: dict[str: dict] = all_prices['data'].get(uuid, None)
             # There is no price data available
             if card_prices is None:
                 continue
@@ -117,8 +123,12 @@ def get_lowest_price_printing(
                 continue
 
             # Drill into the JSON structure some more
-            mtgo_listing = mtgo_listing['cardhoarder']
-            mtgo_retail: dict[str: dict[str: str]] = mtgo_listing['retail']
+            mtgo_listing = mtgo_listing.get('cardhoarder')
+            if mtgo_listing is None:
+                continue
+            mtgo_retail: dict[str: dict[str: str]] = mtgo_listing.get('retail')
+            if mtgo_retail is None:
+                continue
             target_column_names: list[str] = [column for column, _ in columns]
 
             # Update the DataFrame with the lowest price information
@@ -129,4 +139,3 @@ def get_lowest_price_printing(
                     df.loc[card_index, target_column_names] = [set, uuid, price, rarity, mtgo_listing['currency'], date, foil]
 
     return df
-

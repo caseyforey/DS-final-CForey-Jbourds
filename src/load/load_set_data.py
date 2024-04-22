@@ -23,6 +23,7 @@ def load_augmented_set_data(
         format: str, 
         year: list[str] = '2023',
         data_directory: str = c.DATA_DIRECTORY,
+        date_string: str = None,
     ) -> pd.DataFrame:
     """
     Function to create an augmented set dataframe which includes usage of cards
@@ -32,6 +33,7 @@ def load_augmented_set_data(
     :param format:         Magic format to load data for.
     :param year:           Year to load format data for.
     :param data_directory: String for the data directory path. Defaults to a constant.
+    :param date_string:    Specific data to load augmented data with. Defaults to None and uses current day prices.
 
     :returns: Pandas dataframe with set usage across years.
     """
@@ -52,7 +54,7 @@ def load_augmented_set_data(
     augmented_data: pd.DataFrame = set_counts.merge(banned_set_counts, on=['set_code'])
 
     # Calculate mean/median/std for set price
-    card_price_df: pd.DataFrame = lpd.load_card_price_df()
+    card_price_df: pd.DataFrame = lpd.load_card_price_df(date_string=date_string)
     aggregated_set_prices: pd.DataFrame = cmd.calculate_aggregate_set_prices(card_price_df)
     augmented_data = augmented_data.merge(aggregated_set_prices, on='set_code')
 
@@ -74,7 +76,7 @@ def save_format_set_ban_counts(
     :param cache_directory: Directory for cache. Defaults to constant.
     """
 
-    banned_cards = lcd.load_bannded_cards_array(format)
+    banned_cards = lcd.load_banned_cards_array(format)
     banned_cards_df: pd.DataFrame = pd.DataFrame({
         'card_name': banned_cards,
     })

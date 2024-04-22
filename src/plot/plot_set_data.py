@@ -40,6 +40,8 @@ def plot_superimposed_max_min_metrics_by_year(
         augmented_data: pd.DataFrame, 
         metrics: list[str],
         listing_date: datetime.date, 
+        format: str,
+        legend_params: list[tuple[int, str, str, str]] = [],
     ):
     """
     Function which creates the metric plots which extract the max/min of each metric
@@ -47,21 +49,33 @@ def plot_superimposed_max_min_metrics_by_year(
 
     :param augmented_data: Pandas dataframe with the full, augmented data.
     :param metrics:        List of column names to create plots for.
-    :param listing_date:  Date which card listings are gathered from. 
+    :param listing_date:   Date which card listings are gathered from. 
+    :param format:         Format being plotted. 
+    :param legend_params:  List of 4-tuples with year, line color, line style, and label to plot on to graph.
     """
 
     plt.style.use('seaborn-white')
     plt.figure(figsize=(10, 8))
-    plt.title(f'{listing_date} - Max/Min Metrics For Sets Per Year')
+    plt.title(f'{listing_date} - Max/Min Metrics For Sets Per Year in {format.capitalize()} Format')
     plt.tight_layout(pad=4)
 
     # Get internal list of colors, excluding the ones we are using for the lines
     steel_blue: str = f'#1f77b4'
     coral: str = '#ff7f0e'
-    colors: list[str] = [color for color in plt.rcParams["axes.prop_cycle"].by_key()["color"] if color not in [coral, steel_blue]]
-    
+    # Define colorblind-friendly colors
+    colors = ['#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+
     # Get handles to manually make legend
     handles, _ = plt.gca().get_legend_handles_labels()
+
+    earliest_year: int = augmented_data['release_year'].min()
+    latest_year: int = augmented_data['release_year'].max()
+
+    for year, color, linestyle, label in legend_params:
+        if year > latest_year or year < earliest_year:
+                continue
+        plt.axvline(year - 0.5, color=color, linestyle=linestyle, label=label)
+        handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=label))
 
     # Manually define patches
     max_line_patch = mpatches.Patch(color=coral, label='Max Value Line', linestyle='-')
@@ -98,7 +112,7 @@ def plot_superimposed_max_min_metrics_by_year(
         plt.xticks(min_df['release_year'], rotation=90)
         plt.savefig(os.path.join(c.IMAGE_DIRECTORY, f'superimposed_metrics_plot.png'))
 
-    plt.legend(bbox_to_anchor=(1.25, .5), handles=handles)
+    plt.legend(handles=handles)
     plt.show()
     plt.rcParams.update(plt.rcParamsDefault)
 
@@ -106,6 +120,8 @@ def plot_max_min_metrics_by_year(
         augmented_data: pd.DataFrame, 
         metrics: list[str],
         listing_date: datetime.date, 
+        format: str,
+        legend_params: list[tuple[int, str, str, str]] = [],
     ):
     """
     Function which creates the metric plots which extract the max/min of each metric
@@ -113,12 +129,17 @@ def plot_max_min_metrics_by_year(
 
     :param augmented_data: Pandas dataframe with the full, augmented data.
     :param metrics:        List of column names to create plots for.
-    :param listing_date:  Date which card listings are gathered from. 
+    :param listing_date:   Date which card listings are gathered from. 
+    :param format:         Format being plotted. 
+    :param legend_params:  List of 4-tuples with year, line color, line style, and label to plot on to graph.
     """
 
     # Get internal list of colors, excluding the ones we are using for the lines
     steel_blue: str = f'#1f77b4'
     coral: str = '#ff7f0e'
+
+    earliest_year: int = augmented_data['release_year'].min()
+    latest_year: int = augmented_data['release_year'].max()
 
     for metric in metrics:
         min_df: pd.DataFrame = get_set_metrics_per_year(augmented_data, metric, False)
@@ -132,15 +153,21 @@ def plot_max_min_metrics_by_year(
 
         plt.style.use('seaborn-white')
         plt.figure(figsize=(10, 8))
-        plt.title(f'{listing_date} - Max/Min {label} Metrics For Sets Per Year')
+        plt.title(f'{listing_date} - Max/Min {label} Metrics For Sets Per Year in {format.capitalize()} Format')
         plt.tight_layout(pad=4)
 
         # Get handles to manually make legend
-        handles, _ = plt.gca().get_legend_handles_labels()
+        handles, _ = plt.gca().get_legend_handles_labels() 
+
+        for year, color, linestyle, label in legend_params:
+            if year > latest_year or year < earliest_year:
+                continue
+            plt.axvline(year - 0.5, color=color, linestyle=linestyle, label=label)
+            handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=label))
 
         # Handles is a list, so append manual patch
         handles += [max_line_patch, min_line_patch]
-        
+
         plt.xlabel('Set Release Year')
         plt.ylabel(label)
 
@@ -159,9 +186,9 @@ def plot_max_min_metrics_by_year(
                          ha='center', va='bottom', xytext=(0, 5), textcoords='offset points')
 
         plt.xticks(min_df['release_year'], rotation=90)
-        plt.savefig(os.path.join(c.IMAGE_DIRECTORY, f'{metric}_min_max_plot.png'))
+        plt.legend(handles=handles, loc='upper center', bbox_to_anchor=(0.5, -0.1), ncol=2, borderaxespad=1.0)
 
-        plt.legend(bbox_to_anchor=(1.275, .5), handles=handles)
+        plt.savefig(os.path.join(c.IMAGE_DIRECTORY, f'{metric}_min_max_plot.png'), bbox_inches='tight') # Adjusted to include bbox_inches='tight'
         plt.show()
         plt.rcParams.update(plt.rcParamsDefault)
 
@@ -170,6 +197,7 @@ def plot_average_card_price_over_time(
         listing_date: datetime.date, 
         start_year: int = 1991, 
         end_year: int = 2023,
+        legend_params: list[tuple[int, str, str, str]] = [],
     ):
     """
     Function which plots the average card price based on the year of the set 
@@ -179,7 +207,8 @@ def plot_average_card_price_over_time(
     :param listing_date:  Date which card listings are gathered from.        
     :param start_year:    Start of the year window to look at (inclusive). Defaults to 1993 (when Magic came out).
     :param end_year:      End of the year window to look at (inclusive). Defaults to 2023 (whole year increment from analysis). 
-
+    :param legend_params:  List of 4-tuples with year, line color, line style, and label to plot on to graph.
+    
     :returns: Outputs plot and saves it.
     """
     agg_df: pd.DataFrame = card_price_df.groupby(['release_year'])['price'].agg(['mean', 'median', 'std']).reset_index()
@@ -188,7 +217,6 @@ def plot_average_card_price_over_time(
     fig, (mean_plot, median_plot) = plt.subplots(2, 1, sharex=True, figsize=(10, 8))
 
     # Mean plot
-    mean_plot.set_xlabel('Release Year')
     mean_plot.set_ylabel('Mean Price (USD)')
     mean_plot.set_title(f'Mean Card Price from Cheapest Set Release Based on {listing_date} Listing (USD)')
     mean_plot.plot(trimmed_df['release_year'], trimmed_df['mean'])
@@ -201,35 +229,36 @@ def plot_average_card_price_over_time(
 
     # Add additional context to plots
     handles: list = []
-    legend_params: list[tuple] = [
-        (1993, 'green', '--', 'Magic First Comes Out (1993)'),
-        (2019, 'red', '--', 'Fire Design Principle Implemented (2019)'),
-        (2021, 'blue', '--', 'Modern Horizons 2 Released (2021)'),
-    ]
 
     for year, color, linestyle, label in legend_params:
         mean_plot.axvline(year - 0.5, color=color, linestyle=linestyle, label=label)
         median_plot.axvline(year - 0.5, color=color, linestyle=linestyle, label=label)
         handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=label))
 
-    mean_plot.legend(handles=handles, loc='upper center', bbox_to_anchor=[0.55, 0.95])
-    median_plot.legend(handles=handles, loc='upper center', bbox_to_anchor=[0.55, 0.95])
+    fig.legend(handles=handles, loc='lower center', bbox_to_anchor=(0.5, -0.05), ncol=2, borderaxespad=-1.0)
 
-    caption: str = "The set a card is associated with is drawn from the set where it has the cheapest price, as per the daily listings."
-    # fig.figtext(x=0, y=-0.1, s=caption, wrap=True, horizontalalignment='left')
     fig.tight_layout()
     fig.savefig(os.path.join(c.IMAGE_DIRECTORY, 'average_card_price_over_time.png'))
-    fig.show()
+    plt.show()
 
-def plot_stacked_set_counts(card_counts_df: pd.DataFrame, set_year_df: pd.DataFrame, format: str, relative: bool = True):
+def plot_stacked_set_counts(
+        card_counts_df: pd.DataFrame, 
+        set_year_df: pd.DataFrame, 
+        format: str, 
+        relative: bool = True,
+        legend_params: list[tuple[int, str, str, str]] = [],
+        tournament_year: int = 2023,
+    ):
     """
     Function which creates a stacked histogram for the prevalence of card usage based on the
     number of times cards from the set get used based on the set release year.
 
-    :param card_counts_df: Dataframe with the card counts.
-    :param set_year_df:    Dataframe with the set and release year.
-    :param format:         String for the format file (for saving file).
-    :param relative:       Boolean flag for if the histogram should be in relative measures (%).
+    :param card_counts_df:  Dataframe with the card counts.
+    :param set_year_df:     Dataframe with the set and release year.
+    :param format:          String for the format file (for saving file).
+    :param relative:        Boolean flag for if the histogram should be in relative measures (%).
+    :param legend_params:   List of 4-tuples with year, line color, line style, and label to plot on to graph.
+    :param tournament_year: Year the tournament data is from.
     """
     
     # Grouping by 'set_year' and 'set_name', and summing up 'total_count'
@@ -242,13 +271,13 @@ def plot_stacked_set_counts(card_counts_df: pd.DataFrame, set_year_df: pd.DataFr
         grouped_data /= total_count
         grouped_data *= 100
         # Labels
-        title: str = '% of Total Cards Played by Set and Year'
+        title: str = f'% of Total Cards Played by Set in {tournament_year} {format.capitalize()} Format Tournaments'
         ylabel: str = '% of Total Cards Played' 
-        file_name: str = '{format}_stacked_set_relative.png'
+        file_name: str = f'{format}_stacked_set_relative.png'
     else:
-        title: str = 'Card Play Counts by Set and Year'
+        title: str = f'Card Play Counts by Set and Year in {format.capitalize()}'
         ylabel: str = 'Total Card Count' 
-        file_name: str = '{format}_stacked_set_counts.png'
+        file_name: str = f'{format}_stacked_set_counts.png'
 
     # Creating a DataFrame with 'set_name' as a column
     sets = pd.DataFrame({'set_name': grouped_data.columns})
@@ -258,40 +287,34 @@ def plot_stacked_set_counts(card_counts_df: pd.DataFrame, set_year_df: pd.DataFr
 
     # Plotting the data as a stacked bar chart
     plt.style.use('seaborn-white')
-    plt.figure(figsize=(12, 8))  # Adjust the figure size as needed
+    fig, ax = plt.subplots(figsize=(12, 8))  # Adjust the figure size as needed
 
     grouped_data.reset_index(inplace=True)
     grouped_data['release_year'] = grouped_data['release_year'].astype('int32')
 
-    grouped_data.plot(kind='bar', x='release_year', stacked=True, legend=None)
+    grouped_data.plot(kind='bar', x='release_year', stacked=True, ax=ax, legend=None)
 
     min_year = grouped_data['release_year'].min()
 
     # Add additional context to plot
     handles: list = []
-    legend_params: list[tuple] = [
-        (1993, 'green', '--', 'Magic First Comes Out (1993)'),
-        (2019, 'red', '--', 'Fire Design Principle Implemented (2019)'),
-        (2021, 'blue', '--', 'Modern Horizons 2 Released (2021)'),
-    ]
 
     for year, color, linestyle, label in legend_params:
         # 0.5 is a slight spacer before the bar
-        plt.axvline(year - min_year - 0.5, color=color, linestyle=linestyle)
+        ax.axvline(year - min_year - 0.5, color=color, linestyle=linestyle)
         handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=label))
 
-    plt.legend(handles=handles)
+    ax.set_title(title)
+    ax.set_xlabel(xlabel)
+    ax.set_xlim(1991 - min_year, 2025 - min_year)
+    ax.set_ylabel(ylabel)
+    ax.tick_params(axis='x', rotation=45)
 
-    plt.title(title)
-    plt.xlabel(xlabel)
-    plt.xlim(1991 - min_year, 2025 - min_year)
-    plt.ylabel(ylabel)
-    plt.tick_params(axis='x', rotation=45)
-
-    plt.tight_layout()    
-    plt.savefig(os.path.join(c.IMAGE_DIRECTORY, file_name))
-    plt.show()
+    fig.legend(handles=handles, loc='lower center', bbox_to_anchor=(0.5, -0.05), ncol=2, borderaxespad=-1.0)
+    fig.tight_layout()    
+    fig.savefig(os.path.join(c.IMAGE_DIRECTORY, file_name), bbox_inches='tight')
     plt.rcParams.update(plt.rcParamsDefault)
+    fig.show()
 
 def plot_set_table(set_card_usages_and_bans: pd.DataFrame):
     """
