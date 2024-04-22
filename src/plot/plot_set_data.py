@@ -159,11 +159,11 @@ def plot_max_min_metrics_by_year(
         # Get handles to manually make legend
         handles, _ = plt.gca().get_legend_handles_labels() 
 
-        for year, color, linestyle, label in legend_params:
+        for year, color, linestyle, lab in legend_params:
             if year > latest_year or year < earliest_year:
                 continue
-            plt.axvline(year - 0.5, color=color, linestyle=linestyle, label=label)
-            handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=label))
+            plt.axvline(year - 0.5, color=color, linestyle=linestyle, label=lab)
+            handles.append(plt.Line2D([], [], color=color, linestyle=linestyle, label=lab))
 
         # Handles is a list, so append manual patch
         handles += [max_line_patch, min_line_patch]
