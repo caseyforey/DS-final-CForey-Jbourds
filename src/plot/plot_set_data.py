@@ -295,6 +295,7 @@ def plot_stacked_set_counts(
     grouped_data.plot(kind='bar', x='release_year', stacked=True, ax=ax, legend=None)
 
     min_year = grouped_data['release_year'].min()
+    max_year = grouped_data['release_year'].max()
 
     # Add additional context to plot
     handles: list = []
@@ -306,7 +307,8 @@ def plot_stacked_set_counts(
 
     ax.set_title(title)
     ax.set_xlabel(xlabel)
-    ax.set_xlim(1991 - min_year, 2025 - min_year)
+    # +/-1 gives a slight offset in both directions
+    ax.set_xlim(-1, max_year - min_year + 1)
     ax.set_ylabel(ylabel)
     ax.tick_params(axis='x', rotation=45)
 

@@ -1,0 +1,51 @@
+set_name,set_code,release_year,release_month,set_size,num_banned
+Return to Ravnica,RTR,2012,10,274,0.0
+Gatecrash,GTC,2013,02,249,2.0
+Dragon's Maze,DGM,2013,05,156,0.0
+Magic 2014,M14,2013,07,249,0.0
+Theros,THS,2013,09,249,0.0
+Born of the Gods,BNG,2014,02,165,0.0
+Journey into Nyx,JOU,2014,05,165,0.0
+Magic 2015,M15,2014,07,269,0.0
+Khans of Tarkir,KTK,2014,09,269,0.0
+Fate Reforged,FRF,2015,01,185,0.0
+Dragons of Tarkir,DTK,2015,03,264,0.0
+Magic Origins,ORI,2015,07,272,0.0
+Battle for Zendikar,BFZ,2015,10,274,0.0
+Oath of the Gatewatch,OGW,2016,01,184,1.0
+Welcome Deck 2016,W16,2016,04,16,0.0
+Shadows over Innistrad,SOI,2016,04,297,0.0
+Eldritch Moon,EMN,2016,07,205,0.0
+Kaladesh,KLD,2016,09,264,0.0
+Aether Revolt,AER,2017,01,184,2.0
+Welcome Deck 2017,W17,2017,04,30,0.0
+Amonkhet,AKH,2017,04,269,0.0
+Hour of Devastation,HOU,2017,07,199,0.0
+Ixalan,XLN,2017,09,279,0.0
+Rivals of Ixalan,RIX,2018,01,196,0.0
+Dominaria,DOM,2018,04,269,0.0
+Core Set 2019,M19,2018,07,280,1.0
+Guilds of Ravnica,GRN,2018,10,259,0.0
+Ravnica Allegiance,RNA,2019,01,259,1.0
+War of the Spark,WAR,2019,05,264,2.0
+Core Set 2020,M20,2019,07,280,4.0
+Throne of Eldraine,ELD,2019,10,269,2.0
+Theros Beyond Death,THB,2020,01,254,2.0
+Ikoria: Lair of Behemoths,IKO,2020,04,274,2.0
+Core Set 2021,M21,2020,07,274,0.0
+Zendikar Rising,ZNR,2020,09,280,0.0
+Kaldheim,KHM,2021,02,285,0.0
+Strixhaven: School of Mages,STX,2021,04,275,1.0
+Adventures in the Forgotten Realms,AFR,2021,07,281,0.0
+Innistrad: Midnight Hunt,MID,2021,09,277,0.0
+Innistrad: Crimson Vow,VOW,2021,11,277,0.0
+Kamigawa: Neon Dynasty,NEO,2022,02,302,0.0
+Streets of New Capenna,SNC,2022,04,281,0.0
+Dominaria United,DMU,2022,09,281,0.0
+The Brothers' War,BRO,2022,11,292,0.0
+Phyrexia: All Will Be One,ONE,2023,02,271,0.0
+March of the Machine,MOM,2023,04,291,0.0
+March of the Machine: The Aftermath,MAT,2023,05,50,0.0
+Wilds of Eldraine,WOE,2023,09,276,0.0
+The Lost Caverns of Ixalan,LCI,2023,11,291,1.0
+Murders at Karlov Manor,MKM,2024,02,286,0.0
